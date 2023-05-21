@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.yaal.project.hhapi</groupId>
     <artifactId>HhJavaApi</artifactId>
-    <version>0.2.7-SNAPSHOT</version>
+    <version>0.2.8</version>
     <packaging>jar</packaging>
     <name>HeadHunter Java API</name>
     <description>Java API for employment site HeadHunter (hh.ru)</description>
-    <url>https://github.com/Aleks-Ya/hh-java-api</url>
+    <url>https://github.com/DreamCloudProject/hh-java-api.git</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
