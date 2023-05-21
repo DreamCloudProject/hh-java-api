@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Язык сайта.
+ * РЇР·С‹Рє СЃР°Р№С‚Р°.
  * @see ru.yaal.project.hhapi.dictionary.Constants.SiteLang
  */
 public final class SiteLang extends AbstractDictionaryEntry {

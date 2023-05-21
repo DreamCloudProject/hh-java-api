@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Уровень владения языком (резюме).
+ * РЈСЂРѕРІРµРЅСЊ РІР»Р°РґРµРЅРёСЏ СЏР·С‹РєРѕРј (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.LanguageLevel
  */
 public final class LanguageLevel extends AbstractDictionaryEntry {

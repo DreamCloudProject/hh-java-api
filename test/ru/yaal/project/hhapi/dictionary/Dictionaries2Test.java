@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class Dictionaries2Test {
-    private static final String SPB = "Санкт-Петербург";
+    private static final String SPB = "РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі";
 
     @Test
     public void areas() throws Exception {
@@ -21,12 +21,12 @@ public class Dictionaries2Test {
 
     @Test
     public void metroCities() throws Exception {
-        final String chern = "Чернышевская";
+        final String chern = "Р§РµСЂРЅС‹С€РµРІСЃРєР°СЏ";
         assertEquals(chern, MetroCity.CITIES.getByName(SPB).getLines().getByName(chern).getName());
     }
 
     @Test
     public void profFields() throws Exception {
-        assertThat(ProfField.PROF_FIELDS.getById("1.221").getName(), containsString("Программирование"));
+        assertThat(ProfField.PROF_FIELDS.getById("1.221").getName(), containsString("РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ"));
     }
 }

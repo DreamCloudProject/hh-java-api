@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Готовность к переезду (резюме).
+ * Р“РѕС‚РѕРІРЅРѕСЃС‚СЊ Рє РїРµСЂРµРµР·РґСѓ (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.RelocationType
  */
 public final class RelocationType extends AbstractDictionaryEntry {

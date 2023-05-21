@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.employer;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Тип работодателя.
+ * РўРёРї СЂР°Р±РѕС‚РѕРґР°С‚РµР»СЏ.
  * @see ru.yaal.project.hhapi.dictionary.Constants.EmployerType
  */
 public class EmployerType extends AbstractDictionaryEntry {

@@ -26,7 +26,7 @@ public class Dictionary<V extends IDictionaryEntry> implements IDictionary<V> {
     }
 
     /**
-     * Упрощение для put(entry.getId(), entry);
+     * РЈРїСЂРѕС‰РµРЅРёРµ РґР»СЏ put(entry.getId(), entry);
      */
     public final void addEntry(V entry) {
         putId(entry);
@@ -35,22 +35,22 @@ public class Dictionary<V extends IDictionaryEntry> implements IDictionary<V> {
 
     protected void putName(V entry) {
         if (entry.getName() == null) {
-            throw new IllegalArgumentException(format("Имя не может быть null (id %s).", entry.getId()));
+            throw new IllegalArgumentException(format("РРјСЏ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null (id %s).", entry.getId()));
         }
         String name = entry.getName().toUpperCase();
         if (nameMap.containsKey(name)) {
-            throw new IllegalArgumentException(format("Повторяющееся имя: %s.", name));
+            throw new IllegalArgumentException(format("РџРѕРІС‚РѕСЂСЏСЋС‰РµРµСЃСЏ РёРјСЏ: %s.", name));
         }
         nameMap.put(name, entry);
     }
 
     protected void putId(V entry) {
         if (entry.getId() == null) {
-            throw new IllegalArgumentException(format("Ключ не может быть null (имя %s).", entry.getName()));
+            throw new IllegalArgumentException(format("РљР»СЋС‡ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ null (РёРјСЏ %s).", entry.getName()));
         }
         String id = entry.getId().toUpperCase();
         if (idMap.containsKey(id)) {
-            throw new IllegalArgumentException(format("Повторяющийся ключ: %s.", id));
+            throw new IllegalArgumentException(format("РџРѕРІС‚РѕСЂСЏСЋС‰РёР№СЃСЏ РєР»СЋС‡: %s.", id));
         }
         idMap.put(id, entry);
     }
@@ -106,7 +106,7 @@ public class Dictionary<V extends IDictionaryEntry> implements IDictionary<V> {
     }
 
     /**
-     * Регистронезависимый поиск.
+     * Р РµРіРёСЃС‚СЂРѕРЅРµР·Р°РІРёСЃРёРјС‹Р№ РїРѕРёСЃРє.
      */
     @Override
     public V getByName(String name) {
@@ -120,7 +120,7 @@ public class Dictionary<V extends IDictionaryEntry> implements IDictionary<V> {
     }
 
     protected V getNullObject(String idOrName) {
-        LOG.warn("Объект не найден по {}. Возвращаю NullObject.", idOrName);
+        LOG.warn("РћР±СЉРµРєС‚ РЅРµ РЅР°Р№РґРµРЅ РїРѕ {}. Р’РѕР·РІСЂР°С‰Р°СЋ NullObject.", idOrName);
         return nullObject;
     }
 }

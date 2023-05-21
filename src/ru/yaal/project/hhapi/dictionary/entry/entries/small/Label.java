@@ -7,8 +7,8 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Метки вакансии.
- * Может использоваться как параметр поиска вакансий. Допускает множественное значение ("И").
+ * РњРµС‚РєРё РІР°РєР°РЅСЃРёРё.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. Р”РѕРїСѓСЃРєР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ("Р").
  * @see ru.yaal.project.hhapi.dictionary.Constants.Label
  */
 public final class Label extends AbstractDictionaryEntry implements ISearchParameter {
@@ -24,6 +24,6 @@ public final class Label extends AbstractDictionaryEntry implements ISearchParam
 
     @Override
     public String getSearchParameterName() {
-        return "Фильтр по меткам  вакансий";
+        return "Р¤РёР»СЊС‚СЂ РїРѕ РјРµС‚РєР°Рј  РІР°РєР°РЅСЃРёР№";
     }
 }

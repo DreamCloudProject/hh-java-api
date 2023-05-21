@@ -70,7 +70,7 @@ public class FileCache extends AbstractCache {
                 nestedFile.delete();
             }
             if (dir.list().length > 0) {
-                RuntimeException e = new RuntimeException(format("Не удалось очистить кэш %s.", dir.getAbsolutePath()));
+                RuntimeException e = new RuntimeException(format("РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‡РёСЃС‚РёС‚СЊ РєСЌС€ %s.", dir.getAbsolutePath()));
                 LOG.error(e.getMessage());
                 throw e;
             }

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Список вакансий - результат поиска вакансий.
- * Реализует {@code List<Vacancy>}.
+ * РЎРїРёСЃРѕРє РІР°РєР°РЅСЃРёР№ - СЂРµР·СѓР»СЊС‚Р°С‚ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
+ * Р РµР°Р»РёР·СѓРµС‚ {@code List<Vacancy>}.
  */
 public class VacancyList extends ArrayList<Vacancy> {
 

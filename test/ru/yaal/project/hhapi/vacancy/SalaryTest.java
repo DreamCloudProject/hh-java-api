@@ -19,8 +19,8 @@ import static ru.yaal.project.hhapi.vacancy.SalaryTest.SalaryEquals.salaryEquals
 public class SalaryTest {
     private static final Logger LOG = LoggerFactory.getLogger(SalaryTest.class);
     /**
-     * Предельный курс доллара для тестов.
-     * Надеюсь, увеличивать не придется %)
+     * РџСЂРµРґРµР»СЊРЅС‹Р№ РєСѓСЂСЃ РґРѕР»Р»Р°СЂР° РґР»СЏ С‚РµСЃС‚РѕРІ.
+     * РќР°РґРµСЋСЃСЊ, СѓРІРµР»РёС‡РёРІР°С‚СЊ РЅРµ РїСЂРёРґРµС‚СЃСЏ %)
      */
     private static final int MAX_USD_RATE = 100;
 
@@ -65,7 +65,7 @@ public class SalaryTest {
         final int salaryUsd = 1000;
         final Salary expSalary = new Salary(salaryUsd, salaryUsd, expCurrency);
         for (Vacancy vacancy : HhApi.search(expSalary, Constants.OnlyWithSalary.ON)) {
-            //todo переписать проверку с испльзованием матчера SalaryEquals
+            //todo РїРµСЂРµРїРёСЃР°С‚СЊ РїСЂРѕРІРµСЂРєСѓ СЃ РёСЃРїР»СЊР·РѕРІР°РЅРёРµРј РјР°С‚С‡РµСЂР° SalaryEquals
             Salary actSalary = vacancy.getSalary();
             System.out.println(actSalary.getFrom());
             System.out.println(actSalary.getTo());

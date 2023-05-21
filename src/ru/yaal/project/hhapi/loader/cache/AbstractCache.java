@@ -10,11 +10,11 @@ import java.io.LineNumberReader;
 import java.util.Date;
 
 public abstract class AbstractCache implements ICache {
-    protected static final String DATA_FOUND_MESSAGE = "Данные для url={} в кэше '{}' найдены. Размер: {}.";
-    protected static final String DATA_FOUND_BUT_EMPTY_MESSAGE = "Данные для url={} в кэше '{}' найдены, но они пустые.";
-    protected static final String DATA_FOUND_BUT_OUTDATED_MESSAGE = "Данные для url={} в кэше '{}' найдены, но они устарели. Удаляю.";
-    protected static final String DATA_NOT_FOUND_MESSAGE = "Данные для url={} кэше '{}' не найдены.";
-    protected static final String SAVE_DATA_MESSAGE = "Сохраняю в кэш '{}' данные для url={} (длина контента {}).";
+    protected static final String DATA_FOUND_MESSAGE = "Р”Р°РЅРЅС‹Рµ РґР»СЏ url={} РІ РєСЌС€Рµ '{}' РЅР°Р№РґРµРЅС‹. Р Р°Р·РјРµСЂ: {}.";
+    protected static final String DATA_FOUND_BUT_EMPTY_MESSAGE = "Р”Р°РЅРЅС‹Рµ РґР»СЏ url={} РІ РєСЌС€Рµ '{}' РЅР°Р№РґРµРЅС‹, РЅРѕ РѕРЅРё РїСѓСЃС‚С‹Рµ.";
+    protected static final String DATA_FOUND_BUT_OUTDATED_MESSAGE = "Р”Р°РЅРЅС‹Рµ РґР»СЏ url={} РІ РєСЌС€Рµ '{}' РЅР°Р№РґРµРЅС‹, РЅРѕ РѕРЅРё СѓСЃС‚Р°СЂРµР»Рё. РЈРґР°Р»СЏСЋ.";
+    protected static final String DATA_NOT_FOUND_MESSAGE = "Р”Р°РЅРЅС‹Рµ РґР»СЏ url={} РєСЌС€Рµ '{}' РЅРµ РЅР°Р№РґРµРЅС‹.";
+    protected static final String SAVE_DATA_MESSAGE = "РЎРѕС…СЂР°РЅСЏСЋ РІ РєСЌС€ '{}' РґР°РЅРЅС‹Рµ РґР»СЏ url={} (РґР»РёРЅР° РєРѕРЅС‚РµРЅС‚Р° {}).";
     private static final Logger LOG = LoggerFactory.getLogger(AbstractCache.class);
     private long lifeTimeMilliSec;
     private String cacheName;

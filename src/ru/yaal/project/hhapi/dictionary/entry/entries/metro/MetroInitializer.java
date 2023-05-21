@@ -14,7 +14,7 @@ final class MetroInitializer {
     private MetroCityDictionary metroCities;
 
     private MetroInitializer() {
-        LOG.debug("Создаю инстанс MetroInitializer");
+        LOG.debug("РЎРѕР·РґР°СЋ РёРЅСЃС‚Р°РЅСЃ MetroInitializer");
         loadMetro();
     }
 
@@ -31,7 +31,7 @@ final class MetroInitializer {
 
     private void loadMetro() {
         try {
-            LOG.debug("Загружаю справочник метро.");
+            LOG.debug("Р—Р°РіСЂСѓР¶Р°СЋ СЃРїСЂР°РІРѕС‡РЅРёРє РјРµС‚СЂРѕ.");
             String content = loader.loadContent(UrlConstants.METRO_URL);
             IParser<MetroCityDictionary> parse = new MetroParser();
             metroCities = parse.parse(content);

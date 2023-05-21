@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Готовность к командировкам (резюме).
+ * Р“РѕС‚РѕРІРЅРѕСЃС‚СЊ Рє РєРѕРјР°РЅРґРёСЂРѕРІРєР°Рј (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.BusinessTripReadiness
  */
 public final class BusinessTripReadiness extends AbstractDictionaryEntry {

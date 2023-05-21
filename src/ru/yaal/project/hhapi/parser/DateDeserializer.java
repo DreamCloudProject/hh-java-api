@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Парсит дату в формате ISO 8601.
+ * РџР°СЂСЃРёС‚ РґР°С‚Сѓ РІ С„РѕСЂРјР°С‚Рµ ISO 8601.
  */
 public class DateDeserializer implements JsonDeserializer<Date> {
     private static final Logger LOG = LoggerFactory.getLogger(DateDeserializer.class);

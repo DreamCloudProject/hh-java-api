@@ -18,6 +18,6 @@ public class Employer extends AbstractDictionaryEntry implements ISearchParamete
 
     @Override
     public String getSearchParameterName() {
-        return "Идентификатор компании";
+        return "РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РєРѕРјРїР°РЅРёРё";
     }
 }

@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Тип сайта в поле «контакты» (резюме).
+ * РўРёРї СЃР°Р№С‚Р° РІ РїРѕР»Рµ В«РєРѕРЅС‚Р°РєС‚С‹В» (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.ResumeContactsSiteType
  */
 public final class ResumeContactsSiteType extends AbstractDictionaryEntry {

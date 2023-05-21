@@ -8,8 +8,8 @@ import ru.yaal.project.hhapi.search.SearchParameterBox;
 import static java.lang.String.format;
 
 /**
- * Период поиска вакансий: за сколько дней искать вакансии.
- * Максимум 30 дней (ограничение HeadHunter).
+ * РџРµСЂРёРѕРґ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№: Р·Р° СЃРєРѕР»СЊРєРѕ РґРЅРµР№ РёСЃРєР°С‚СЊ РІР°РєР°РЅСЃРёРё.
+ * РњР°РєСЃРёРјСѓРј 30 РґРЅРµР№ (РѕРіСЂР°РЅРёС‡РµРЅРёРµ HeadHunter).
  */
 public final class Period implements ISearchParameter {
     public static final int MIN_PERIOD = 1;
@@ -17,9 +17,9 @@ public final class Period implements ISearchParameter {
     private Integer period;
 
     /**
-     * Период поиска вакансий: за сколько дней искать вакансии.
+     * РџРµСЂРёРѕРґ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№: Р·Р° СЃРєРѕР»СЊРєРѕ РґРЅРµР№ РёСЃРєР°С‚СЊ РІР°РєР°РЅСЃРёРё.
      *
-     * @param period Период поиска вакансий. Максимум 30 дней (ограничение HeadHunter).
+     * @param period РџРµСЂРёРѕРґ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. РњР°РєСЃРёРјСѓРј 30 РґРЅРµР№ (РѕРіСЂР°РЅРёС‡РµРЅРёРµ HeadHunter).
      */
     public Period(Integer period) throws SearchException {
         setPeriod(period);
@@ -37,13 +37,13 @@ public final class Period implements ISearchParameter {
     public void setPeriod(Integer period) throws SearchException {
         if (period < MIN_PERIOD || period > MAX_PERIOD) {
             throw new SearchException(
-                    format("Некорректный период. Ожидается %d-%d. Получено %d.", MIN_PERIOD, MAX_PERIOD, period));
+                    format("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РїРµСЂРёРѕРґ. РћР¶РёРґР°РµС‚СЃСЏ %d-%d. РџРѕР»СѓС‡РµРЅРѕ %d.", MIN_PERIOD, MAX_PERIOD, period));
         }
         this.period = period;
     }
 
     @Override
     public String getSearchParameterName() {
-        return "Период";
+        return "РџРµСЂРёРѕРґ";
     }
 }

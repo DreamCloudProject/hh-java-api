@@ -6,8 +6,8 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Только с указанной зарплатой.
- * Может использоваться как параметр поиска вакансий.
+ * РўРѕР»СЊРєРѕ СЃ СѓРєР°Р·Р°РЅРЅРѕР№ Р·Р°СЂРїР»Р°С‚РѕР№.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
  * @see ru.yaal.project.hhapi.dictionary.Constants.OnlyWithSalary
  */
 public class OnlyWithSalary implements ISearchParameter {
@@ -24,6 +24,6 @@ public class OnlyWithSalary implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Только с указанием зарплаты";
+        return "РўРѕР»СЊРєРѕ СЃ СѓРєР°Р·Р°РЅРёРµРј Р·Р°СЂРїР»Р°С‚С‹";
     }
 }

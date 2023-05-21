@@ -10,9 +10,9 @@ import static org.mockito.Mockito.verify;
 
 public class TwoLevelStorageTest {
     private final String name1 = "http://sonar.com/download?v=3&a=aaa";
-    private final String content1 = "Кошка";
+    private final String content1 = "РљРѕС€РєР°";
     private final String name2 = "http://mail.ru?abv=678&blso=55";
-    private final String content2 = "Дельфин";
+    private final String content2 = "Р”РµР»СЊС„РёРЅ";
     private final ICache fast = PowerMockito.spy(new MemoryCache("Fast Cache", 1000));
     private final ICache slow = PowerMockito.spy(new MemoryCache("Slow Cache", 1000));
     private final ICache twoLevel = new TwoLevelCache(fast, slow);

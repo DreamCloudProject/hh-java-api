@@ -7,8 +7,8 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * График работы.
- * Может использоваться как параметр поиска вакансий. Допускает множественное значение ("ИЛИ").
+ * Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. Р”РѕРїСѓСЃРєР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ("РР›Р").
  * @see ru.yaal.project.hhapi.dictionary.Constants.Schedule
  */
 public final class Schedule extends AbstractDictionaryEntry implements ISearchParameter {
@@ -24,6 +24,6 @@ public final class Schedule extends AbstractDictionaryEntry implements ISearchPa
 
     @Override
     public String getSearchParameterName() {
-        return "График работы";
+        return "Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹";
     }
 }

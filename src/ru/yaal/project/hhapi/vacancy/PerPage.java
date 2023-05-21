@@ -23,7 +23,7 @@ final class PerPage implements ISearchParameter {
     public void setPerPage(Integer perPage) throws SearchException {
         if (perPage < MIN_PER_PAGE || perPage > MAX_PER_PAGE) {
             throw new SearchException(
-                    format("Некорректное количество найденных элементов на страницу. Ожидается %d-%d. Получено %d",
+                    format("РќРµРєРѕСЂСЂРµРєС‚РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅР°Р№РґРµРЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РЅР° СЃС‚СЂР°РЅРёС†Сѓ. РћР¶РёРґР°РµС‚СЃСЏ %d-%d. РџРѕР»СѓС‡РµРЅРѕ %d",
                             MIN_PER_PAGE, MAX_PER_PAGE, perPage));
         }
         this.perPage = perPage;
@@ -36,6 +36,6 @@ final class PerPage implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Количество вакансий на страницу";
+        return "РљРѕР»РёС‡РµСЃС‚РІРѕ РІР°РєР°РЅСЃРёР№ РЅР° СЃС‚СЂР°РЅРёС†Сѓ";
     }
 }

@@ -7,7 +7,7 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Сортировка списка вакансий.
+ * РЎРѕСЂС‚РёСЂРѕРІРєР° СЃРїРёСЃРєР° РІР°РєР°РЅСЃРёР№.
  * @see ru.yaal.project.hhapi.dictionary.Constants.Order
  */
 public final class Order extends AbstractDictionaryEntry implements ISearchParameter {
@@ -23,6 +23,6 @@ public final class Order extends AbstractDictionaryEntry implements ISearchParam
 
     @Override
     public String getSearchParameterName() {
-        return "Сортировка вакансий";
+        return "РЎРѕСЂС‚РёСЂРѕРІРєР° РІР°РєР°РЅСЃРёР№";
     }
 }

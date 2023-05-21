@@ -19,18 +19,18 @@ public final class ContentLoaderFactory {
         int sevenDays = 7 * 24 * 60;
         File longTermDir = new File(cacheDir, "long_term");
         LONG_TERM_STORAGE = new TwoLevelCache(new MemoryCache(sevenDays), new FileCache(longTermDir, sevenDays));
-        LOG.debug("Инициализирован кэш длительного хранения ({} мин.): {}", sevenDays, longTermDir.getAbsolutePath());
+        LOG.debug("РРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅ РєСЌС€ РґР»РёС‚РµР»СЊРЅРѕРіРѕ С…СЂР°РЅРµРЅРёСЏ ({} РјРёРЅ.): {}", sevenDays, longTermDir.getAbsolutePath());
 
         int oneDay = 24 * 60;
         File shortTermDir = new File(cacheDir, "short_term");
         SHORT_TERM_STORAGE = new TwoLevelCache(new MemoryCache(oneDay), new FileCache(shortTermDir, oneDay));
-        LOG.debug("Инициализирован кэш краткосрочного хранения ({} мин.): {}", oneDay, shortTermDir.getAbsolutePath());
+        LOG.debug("РРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅ РєСЌС€ РєСЂР°С‚РєРѕСЃСЂРѕС‡РЅРѕРіРѕ С…СЂР°РЅРµРЅРёСЏ ({} РјРёРЅ.): {}", oneDay, shortTermDir.getAbsolutePath());
 
         if (isUseFakeStorage()) {
             File testCacheDir = new File(cacheDir, "test");
             fakeStorage = new ClassResourceCache(testCacheDir);
         }
-        LOG.debug("Инициализирован кэш для тестирования: {}", fakeStorage);
+        LOG.debug("РРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅ РєСЌС€ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ: {}", fakeStorage);
     }
 
     private ContentLoaderFactory() {

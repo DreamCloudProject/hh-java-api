@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Образование (резюме).
+ * РћР±СЂР°Р·РѕРІР°РЅРёРµ (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.EducationLevel
  */
 public final class EducationLevel extends AbstractDictionaryEntry {

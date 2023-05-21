@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Тесты требуют подключения к Интернету для запросов к API HH.
+ * РўРµСЃС‚С‹ С‚СЂРµР±СѓСЋС‚ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє РРЅС‚РµСЂРЅРµС‚Сѓ РґР»СЏ Р·Р°РїСЂРѕСЃРѕРІ Рє API HH.
  *
  * @author Aleks
  */
@@ -21,10 +21,10 @@ public class SmallDictionariesInitializerTest {
         IDictionary<Currency> dict = SmallDictionariesInitializer.getInstance().getCurrency();
         assertEquals(7, dict.size());
         Currency rur = dict.getById("RUR");
-        assertEquals("Рубли", rur.getName());
+        assertEquals("Р СѓР±Р»Рё", rur.getName());
         assertEquals(true, rur.isDefault());
         assertEquals(new Double(1), rur.getRate());
-        assertEquals("руб.", rur.getAbbr());
+        assertEquals("СЂСѓР±.", rur.getAbbr());
     }
 
     @Test
@@ -33,7 +33,7 @@ public class SmallDictionariesInitializerTest {
         assertEquals(8, dict.size());
         EducationLevel higher = dict.getById("higher");
         assertNotNull(higher);
-        assertEquals("Высшее", higher.getName());
+        assertEquals("Р’С‹СЃС€РµРµ", higher.getName());
     }
 
     @Test

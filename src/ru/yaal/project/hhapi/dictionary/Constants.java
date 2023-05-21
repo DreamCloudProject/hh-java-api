@@ -3,18 +3,18 @@ package ru.yaal.project.hhapi.dictionary;
 import ru.yaal.project.hhapi.dictionary.entry.entries.small.SmallDictionariesInitializer;
 
 /**
- * Константы для доступа к "малым" справочникам.
+ * РљРѕРЅСЃС‚Р°РЅС‚С‹ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє "РјР°Р»С‹Рј" СЃРїСЂР°РІРѕС‡РЅРёРєР°Рј.
  *
- * @see ru.yaal.project.hhapi.dictionary.entry.entries.proffield.ProfField#PROF_FIELDS Справочник профессиональных областей
- * @see ru.yaal.project.hhapi.dictionary.entry.entries.area.Area#AREAS Справочник районов
- * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroCity#CITIES Справочник городов с метро
- * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroLine Справочники веток метро
- * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroStation#STATIONS Справочник станций метро
+ * @see ru.yaal.project.hhapi.dictionary.entry.entries.proffield.ProfField#PROF_FIELDS РЎРїСЂР°РІРѕС‡РЅРёРє РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹С… РѕР±Р»Р°СЃС‚РµР№
+ * @see ru.yaal.project.hhapi.dictionary.entry.entries.area.Area#AREAS РЎРїСЂР°РІРѕС‡РЅРёРє СЂР°Р№РѕРЅРѕРІ
+ * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroCity#CITIES РЎРїСЂР°РІРѕС‡РЅРёРє РіРѕСЂРѕРґРѕРІ СЃ РјРµС‚СЂРѕ
+ * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroLine РЎРїСЂР°РІРѕС‡РЅРёРєРё РІРµС‚РѕРє РјРµС‚СЂРѕ
+ * @see ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroStation#STATIONS РЎРїСЂР°РІРѕС‡РЅРёРє СЃС‚Р°РЅС†РёР№ РјРµС‚СЂРѕ
  */
 @SuppressWarnings("unused")
 public interface Constants {
     /**
-     * Язык сайта.
+     * РЇР·С‹Рє СЃР°Р№С‚Р°.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.SiteLang
      */
@@ -22,7 +22,7 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.SiteLang>
                 SITE_LANGS = SmallDictionariesInitializer.getInstance().getSiteLang();
         /**
-         * По-русски.
+         * РџРѕ-СЂСѓСЃСЃРєРё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.SiteLang
                 RU = SITE_LANGS.getById("ru");
@@ -34,7 +34,7 @@ public interface Constants {
     }
 
     /**
-     * Пол (резюме).
+     * РџРѕР» (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Gender
      */
@@ -42,24 +42,24 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Gender>
                 GENDERS = SmallDictionariesInitializer.getInstance().getGender();
         /**
-         * Не скажу.
+         * РќРµ СЃРєР°Р¶Сѓ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Gender
                 UNKNOWN = GENDERS.getById("unknown");
         /**
-         * Мужской.
+         * РњСѓР¶СЃРєРѕР№.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Gender
                 MALE = GENDERS.getById("male");
         /**
-         * Женский.
+         * Р–РµРЅСЃРєРёР№.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Gender
                 FEMALE = GENDERS.getById("female");
     }
 
     /**
-     * Готовность к командировкам (резюме).
+     * Р“РѕС‚РѕРІРЅРѕСЃС‚СЊ Рє РєРѕРјР°РЅРґРёСЂРѕРІРєР°Рј (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.BusinessTripReadiness
      */
@@ -67,24 +67,24 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.BusinessTripReadiness>
                 READINESS = SmallDictionariesInitializer.getInstance().getBusinessTripReadiness();
         /**
-         * Готов к командировкам.
+         * Р“РѕС‚РѕРІ Рє РєРѕРјР°РЅРґРёСЂРѕРІРєР°Рј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.BusinessTripReadiness
                 READY = READINESS.getById("ready");
         /**
-         * Готов к редким командировкам.
+         * Р“РѕС‚РѕРІ Рє СЂРµРґРєРёРј РєРѕРјР°РЅРґРёСЂРѕРІРєР°Рј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.BusinessTripReadiness
                 SOMETIMES = READINESS.getById("sometimes");
         /**
-         * Не готов к командировкам.
+         * РќРµ РіРѕС‚РѕРІ Рє РєРѕРјР°РЅРґРёСЂРѕРІРєР°Рј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.BusinessTripReadiness
                 NEVER = READINESS.getById("never");
     }
 
     /**
-     * Валюта.
+     * Р’Р°Р»СЋС‚Р°.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
      */
@@ -92,44 +92,44 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency>
                 CURRENCIES = SmallDictionariesInitializer.getInstance().getCurrency();
         /**
-         * Рубли.
+         * Р СѓР±Р»Рё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 RUR = CURRENCIES.getById("RUR");
         /**
-         * Доллары.
+         * Р”РѕР»Р»Р°СЂС‹.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 USD = CURRENCIES.getById("USD");
         /**
-         * Евро.
+         * Р•РІСЂРѕ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 EUR = CURRENCIES.getById("EUR");
         /**
-         * Манаты.
+         * РњР°РЅР°С‚С‹.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 AZN = CURRENCIES.getById("AZN");
         /**
-         * Белорусские рубли.
+         * Р‘РµР»РѕСЂСѓСЃСЃРєРёРµ СЂСѓР±Р»Рё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 BYR = CURRENCIES.getById("BYR");
         /**
-         * Тенге.
+         * РўРµРЅРіРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 KZT = CURRENCIES.getById("KZT");
         /**
-         * Гривны.
+         * Р“СЂРёРІРЅС‹.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Currency
                 UAH = CURRENCIES.getById("UAH");
     }
 
     /**
-     * Образование (резюме).
+     * РћР±СЂР°Р·РѕРІР°РЅРёРµ (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
      */
@@ -137,49 +137,49 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel>
                 EDUCATION_LEVELS = SmallDictionariesInitializer.getInstance().getEducationLevel();
         /**
-         * Высшее.
+         * Р’С‹СЃС€РµРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 HIGHER = EDUCATION_LEVELS.getById("higher");
         /**
-         * Бакалавр.
+         * Р‘Р°РєР°Р»Р°РІСЂ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 BACHELOR = EDUCATION_LEVELS.getById("bachelor");
         /**
-         * Магистр.
+         * РњР°РіРёСЃС‚СЂ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 MASTER = EDUCATION_LEVELS.getById("master");
         /**
-         * Кандидат наук.
+         * РљР°РЅРґРёРґР°С‚ РЅР°СѓРє.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 CANDIDATE = EDUCATION_LEVELS.getById("candidate");
         /**
-         * Доктор наук.
+         * Р”РѕРєС‚РѕСЂ РЅР°СѓРє.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 DOCTOR = EDUCATION_LEVELS.getById("doctor");
         /**
-         * Неоконченное высшее.
+         * РќРµРѕРєРѕРЅС‡РµРЅРЅРѕРµ РІС‹СЃС€РµРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 UNFINISHED_HIGHER = EDUCATION_LEVELS.getById("unfinished_higher");
         /**
-         * Среднее.
+         * РЎСЂРµРґРЅРµРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 SECONDARY = EDUCATION_LEVELS.getById("secondary");
         /**
-         * Среднее специальное.
+         * РЎСЂРµРґРЅРµРµ СЃРїРµС†РёР°Р»СЊРЅРѕРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.EducationLevel
                 SPECIAL_SECONDARY = EDUCATION_LEVELS.getById("special_secondary");
     }
 
     /**
-     * Тип занятости (вакансия).
+     * РўРёРї Р·Р°РЅСЏС‚РѕСЃС‚Рё (РІР°РєР°РЅСЃРёСЏ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
      */
@@ -187,34 +187,34 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment>
                 EMPLOYMENTS = SmallDictionariesInitializer.getInstance().getEmployment();
         /**
-         * Полная занятость.
+         * РџРѕР»РЅР°СЏ Р·Р°РЅСЏС‚РѕСЃС‚СЊ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
                 FULL = EMPLOYMENTS.getById("full");
         /**
-         * Частичная занятость.
+         * Р§Р°СЃС‚РёС‡РЅР°СЏ Р·Р°РЅСЏС‚РѕСЃС‚СЊ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
                 PART = EMPLOYMENTS.getById("part");
         /**
-         * Проектная работа.
+         * РџСЂРѕРµРєС‚РЅР°СЏ СЂР°Р±РѕС‚Р°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
                 PROJECT = EMPLOYMENTS.getById("project");
         /**
-         * Волонтерство.
+         * Р’РѕР»РѕРЅС‚РµСЂСЃС‚РІРѕ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
                 VOLUNTEER = EMPLOYMENTS.getById("volunteer");
         /**
-         * Стажировка.
+         * РЎС‚Р°Р¶РёСЂРѕРІРєР°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Employment
                 PROBATION = EMPLOYMENTS.getById("probation");
     }
 
     /**
-     * Опыт работы (вакансия).
+     * РћРїС‹С‚ СЂР°Р±РѕС‚С‹ (РІР°РєР°РЅСЃРёСЏ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience
      */
@@ -222,29 +222,29 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience>
                 EXPERIENCES = SmallDictionariesInitializer.getInstance().getExperience();
         /**
-         * Нет опыта.
+         * РќРµС‚ РѕРїС‹С‚Р°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience
                 NO_EXPERIENCE = EXPERIENCES.getById("noExperience");
         /**
-         * От 1 года до 3 лет.
+         * РћС‚ 1 РіРѕРґР° РґРѕ 3 Р»РµС‚.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience
                 BETWEEN_1_AND_3 = EXPERIENCES.getById("between1And3");
         /**
-         * От 3 до 6 лет.
+         * РћС‚ 3 РґРѕ 6 Р»РµС‚.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience
                 BETWEEN_3_AND_6 = EXPERIENCES.getById("between3And6");
         /**
-         * Более 6 лет.
+         * Р‘РѕР»РµРµ 6 Р»РµС‚.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Experience
                 MORE_THAN_6 = EXPERIENCES.getById("moreThan6");
     }
 
     /**
-     * График работы.
+     * Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule
      */
@@ -252,29 +252,29 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule>
                 SCHEDULES = SmallDictionariesInitializer.getInstance().getSchedule();
         /**
-         * Полный день.
+         * РџРѕР»РЅС‹Р№ РґРµРЅСЊ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule
                 FULL_DAY = SCHEDULES.getById("fullDay");
         /**
-         * Сменный график.
+         * РЎРјРµРЅРЅС‹Р№ РіСЂР°С„РёРє.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule
                 SHIFT = SCHEDULES.getById("shift");
         /**
-         * Гибкий график.
+         * Р“РёР±РєРёР№ РіСЂР°С„РёРє.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule
                 FLEXIBLE = SCHEDULES.getById("flexible");
         /**
-         * Удаленная работа.
+         * РЈРґР°Р»РµРЅРЅР°СЏ СЂР°Р±РѕС‚Р°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Schedule
                 REMOTE = SCHEDULES.getById("remote");
     }
 
     /**
-     * Метки вакансии.
+     * РњРµС‚РєРё РІР°РєР°РЅСЃРёРё.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Label
      */
@@ -282,17 +282,17 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Label>
                 LABELS = SmallDictionariesInitializer.getInstance().getLabel();
         /**
-         * Только с адресом.
+         * РўРѕР»СЊРєРѕ СЃ Р°РґСЂРµСЃРѕРј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Label
                 WITH_ADDRESS = LABELS.getById("with_address");
         /**
-         * Только доступные для людей с инвалидностью.
+         * РўРѕР»СЊРєРѕ РґРѕСЃС‚СѓРїРЅС‹Рµ РґР»СЏ Р»СЋРґРµР№ СЃ РёРЅРІР°Р»РёРґРЅРѕСЃС‚СЊСЋ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Label
                 ACCEPT_HANDICAPPED = LABELS.getById("accept_handicapped");
         /**
-         * Без вакансий агентств.
+         * Р‘РµР· РІР°РєР°РЅСЃРёР№ Р°РіРµРЅС‚СЃС‚РІ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Label
                 NOT_FROM_AGENCY = LABELS.getById("not_from_agency");
@@ -300,7 +300,7 @@ public interface Constants {
     }
 
     /**
-     * Уровень владения языком (резюме).
+     * РЈСЂРѕРІРµРЅСЊ РІР»Р°РґРµРЅРёСЏ СЏР·С‹РєРѕРј (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
      */
@@ -308,34 +308,34 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel>
                 LANGUAGE_LEVELS = SmallDictionariesInitializer.getInstance().getLanguageLevel();
         /**
-         * Базовые знания.
+         * Р‘Р°Р·РѕРІС‹Рµ Р·РЅР°РЅРёСЏ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
                 BASIC = LANGUAGE_LEVELS.getById("basic");
         /**
-         * Читаю профессиональную литературу.
+         * Р§РёС‚Р°СЋ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅСѓСЋ Р»РёС‚РµСЂР°С‚СѓСЂСѓ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
                 CAN_READ = LANGUAGE_LEVELS.getById("can_read");
         /**
-         * Могу проходить интервью.
+         * РњРѕРіСѓ РїСЂРѕС…РѕРґРёС‚СЊ РёРЅС‚РµСЂРІСЊСЋ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
                 CAN_PASS_INTERVIEW = LANGUAGE_LEVELS.getById("can_pass_interview");
         /**
-         * Свободно владею.
+         * РЎРІРѕР±РѕРґРЅРѕ РІР»Р°РґРµСЋ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
                 FLUENT = LANGUAGE_LEVELS.getById("fluent");
         /**
-         * Родной.
+         * Р РѕРґРЅРѕР№.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.LanguageLevel
                 NATIVE = LANGUAGE_LEVELS.getById("native");
     }
 
     /**
-     * Тип вакансии.
+     * РўРёРї РІР°РєР°РЅСЃРёРё.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType
      */
@@ -343,29 +343,29 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType>
                 VACANCY_TYPES = SmallDictionariesInitializer.getInstance().getVacancyType();
         /**
-         * Открытая.
+         * РћС‚РєСЂС‹С‚Р°СЏ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType
                 OPEN = VACANCY_TYPES.getById("open");
         /**
-         * Закрытая.
+         * Р—Р°РєСЂС‹С‚Р°СЏ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType
                 CLOSED = VACANCY_TYPES.getById("closed");
         /**
-         * Анонимная.
+         * РђРЅРѕРЅРёРјРЅР°СЏ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType
                 ANONYMOUS = VACANCY_TYPES.getById("anonymous");
         /**
-         * С прямым откликом.
+         * РЎ РїСЂСЏРјС‹Рј РѕС‚РєР»РёРєРѕРј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancyType
                 DIRECT = VACANCY_TYPES.getById("direct");
     }
 
     /**
-     * Область поиска.
+     * РћР±Р»Р°СЃС‚СЊ РїРѕРёСЃРєР°.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancySearchFields
      */
@@ -373,47 +373,47 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancySearchFields>
                 VACANCY_SEARCH_FIELDS = SmallDictionariesInitializer.getInstance().getVacancySearchFields();
         /**
-         * В названии вакансии.
+         * Р’ РЅР°Р·РІР°РЅРёРё РІР°РєР°РЅСЃРёРё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancySearchFields
                 VACANCY_NAME = VACANCY_SEARCH_FIELDS.getById("name");
         /**
-         * В названии компании.
+         * Р’ РЅР°Р·РІР°РЅРёРё РєРѕРјРїР°РЅРёРё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancySearchFields
                 COMPANY_NAME = VACANCY_SEARCH_FIELDS.getById("company_name");
         /**
-         * В описании вакансии.
+         * Р’ РѕРїРёСЃР°РЅРёРё РІР°РєР°РЅСЃРёРё.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.VacancySearchFields
                 DESCRIPTION = VACANCY_SEARCH_FIELDS.getById("description");
     }
 
     /**
-     * Тип работодателя.
+     * РўРёРї СЂР°Р±РѕС‚РѕРґР°С‚РµР»СЏ.
      */
     public static interface EmployerType {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.employer.EmployerType>
                 EMPLOYER_TYPES = SmallDictionariesInitializer.getInstance().getEmployerType();
         /**
-         * Прямой работодатель.
+         * РџСЂСЏРјРѕР№ СЂР°Р±РѕС‚РѕРґР°С‚РµР»СЊ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.employer.EmployerType
                 COMPANY = EMPLOYER_TYPES.getById("company");
         /**
-         * Кадровое агентство.
+         * РљР°РґСЂРѕРІРѕРµ Р°РіРµРЅС‚СЃС‚РІРѕ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.employer.EmployerType
                 AGENCY = EMPLOYER_TYPES.getById("agency");
         /**
-         * Частный специалист по подбору персонала.
+         * Р§Р°СЃС‚РЅС‹Р№ СЃРїРµС†РёР°Р»РёСЃС‚ РїРѕ РїРѕРґР±РѕСЂСѓ РїРµСЂСЃРѕРЅР°Р»Р°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.employer.EmployerType
                 PRIVATE_RECRUITER = EMPLOYER_TYPES.getById("private_recruiter");
     }
 
     /**
-     * Время в пути (резюме).
+     * Р’СЂРµРјСЏ РІ РїСѓС‚Рё (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.TravelTime
      */
@@ -421,24 +421,24 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.TravelTime>
                 TRAVEL_TIMES = SmallDictionariesInitializer.getInstance().getTravelTime();
         /**
-         * Не имеет значения.
+         * РќРµ РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёСЏ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.TravelTime
                 ANY = TRAVEL_TIMES.getById("any");
         /**
-         * Не более часа.
+         * РќРµ Р±РѕР»РµРµ С‡Р°СЃР°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.TravelTime
                 LESS_THAN_HOUR = TRAVEL_TIMES.getById("less_than_hour");
         /**
-         * Не более полутора часов.
+         * РќРµ Р±РѕР»РµРµ РїРѕР»СѓС‚РѕСЂР° С‡Р°СЃРѕРІ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.TravelTime
                 FROM_HOUR_TO_ONE_AND_HALF = TRAVEL_TIMES.getById("from_hour_to_one_and_half");
     }
 
     /**
-     * Готовность к переезду (резюме).
+     * Р“РѕС‚РѕРІРЅРѕСЃС‚СЊ Рє РїРµСЂРµРµР·РґСѓ (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.RelocationType
      */
@@ -446,24 +446,24 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.RelocationType>
                 RELOCATION_TYPES = SmallDictionariesInitializer.getInstance().getRelocationType();
         /**
-         * Не готов к переезду.
+         * РќРµ РіРѕС‚РѕРІ Рє РїРµСЂРµРµР·РґСѓ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.RelocationType
                 NO_RELOCATION = RELOCATION_TYPES.getById("no_relocation");
         /**
-         * Готов к переезду.
+         * Р“РѕС‚РѕРІ Рє РїРµСЂРµРµР·РґСѓ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.RelocationType
                 POSSIBLE = RELOCATION_TYPES.getById("relocation_possible");
         /**
-         * Хочу переехать.
+         * РҐРѕС‡Сѓ РїРµСЂРµРµС…Р°С‚СЊ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.RelocationType
                 DESIRABLE = RELOCATION_TYPES.getById("relocation_desirable");
     }
 
     /**
-     * Сортировка списка вакансий.
+     * РЎРѕСЂС‚РёСЂРѕРІРєР° СЃРїРёСЃРєР° РІР°РєР°РЅСЃРёР№.
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.Order
      */
@@ -471,29 +471,29 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.Order>
                 ORDERS = SmallDictionariesInitializer.getInstance().getOrder();
         /**
-         * По дате.
+         * РџРѕ РґР°С‚Рµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Order
                 PUBLICATION_TIME = ORDERS.getById("publication_time");
         /**
-         * По убыванию зарплаты.
+         * РџРѕ СѓР±С‹РІР°РЅРёСЋ Р·Р°СЂРїР»Р°С‚С‹.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Order
                 SALARY_DESC = ORDERS.getById("salary_desc");
         /**
-         * По возрастанию зарплаты.
+         * РџРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ Р·Р°СЂРїР»Р°С‚С‹.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Order
                 SALARY_ASC = ORDERS.getById("salary_asc");
         /**
-         * По соответствию.
+         * РџРѕ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЋ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.Order
                 RELEVANCE = ORDERS.getById("relevance");
     }
 
     /**
-     * Желаемый способ связи (резюме).
+     * Р–РµР»Р°РµРјС‹Р№ СЃРїРѕСЃРѕР± СЃРІСЏР·Рё (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType
      */
@@ -501,22 +501,22 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType>
                 PREFERRED_CONTACT_TYPES = SmallDictionariesInitializer.getInstance().getPreferredContactType();
         /**
-         * Домашний телефон.
+         * Р”РѕРјР°С€РЅРёР№ С‚РµР»РµС„РѕРЅ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType
                 HOME = PREFERRED_CONTACT_TYPES.getById("home");
         /**
-         * Рабочий телефон.
+         * Р Р°Р±РѕС‡РёР№ С‚РµР»РµС„РѕРЅ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType
                 WORK = PREFERRED_CONTACT_TYPES.getById("work");
         /**
-         * Мобильный телефон.
+         * РњРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType
                 CELL = PREFERRED_CONTACT_TYPES.getById("cell");
         /**
-         * Эл. почта.
+         * Р­Р». РїРѕС‡С‚Р°.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.PreferredContactType
                 EMAIL = PREFERRED_CONTACT_TYPES.getById("email");
@@ -524,7 +524,7 @@ public interface Constants {
     }
 
     /**
-     * Тип сайта в поле «контакты» (резюме).
+     * РўРёРї СЃР°Р№С‚Р° РІ РїРѕР»Рµ В«РєРѕРЅС‚Р°РєС‚С‹В» (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeContactsSiteType
      */
@@ -532,12 +532,12 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeContactsSiteType>
                 RESUME_CONTACTS_SITE_TYPES = SmallDictionariesInitializer.getInstance().getResumeContactsSiteType();
         /**
-         * Другой сайт.
+         * Р”СЂСѓРіРѕР№ СЃР°Р№С‚.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeContactsSiteType
                 PERSONAL = RESUME_CONTACTS_SITE_TYPES.getById("personal");
         /**
-         * Мой круг.
+         * РњРѕР№ РєСЂСѓРі.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeContactsSiteType
                 MOI_KRUG = RESUME_CONTACTS_SITE_TYPES.getById("moi_krug");
@@ -580,7 +580,7 @@ public interface Constants {
     }
 
     /**
-     * Уровень доступа к резюме (резюме).
+     * РЈСЂРѕРІРµРЅСЊ РґРѕСЃС‚СѓРїР° Рє СЂРµР·СЋРјРµ (СЂРµР·СЋРјРµ).
      *
      * @see ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
      */
@@ -588,39 +588,39 @@ public interface Constants {
         public static final IDictionary<ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType>
                 RESUME_ACCESS_TYPES = SmallDictionariesInitializer.getInstance().getResumeAccessType();
         /**
-         * Закрытое (резюме не видно никому).
+         * Р—Р°РєСЂС‹С‚РѕРµ (СЂРµР·СЋРјРµ РЅРµ РІРёРґРЅРѕ РЅРёРєРѕРјСѓ).
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 NO_ONE = RESUME_ACCESS_TYPES.getById("no_one");
         /**
-         * Резюме видно только выбранным компаниям.
+         * Р РµР·СЋРјРµ РІРёРґРЅРѕ С‚РѕР»СЊРєРѕ РІС‹Р±СЂР°РЅРЅС‹Рј РєРѕРјРїР°РЅРёСЏРј.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 WHITE_LIST = RESUME_ACCESS_TYPES.getById("whitelist");
         /**
-         * Все компании, кроме выбранных (список в настройках видимости).
+         * Р’СЃРµ РєРѕРјРїР°РЅРёРё, РєСЂРѕРјРµ РІС‹Р±СЂР°РЅРЅС‹С… (СЃРїРёСЃРѕРє РІ РЅР°СЃС‚СЂРѕР№РєР°С… РІРёРґРёРјРѕСЃС‚Рё).
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 BLACK_LIST = RESUME_ACCESS_TYPES.getById("blacklist");
         /**
-         * Видят только клиенты hh.ru.
+         * Р’РёРґСЏС‚ С‚РѕР»СЊРєРѕ РєР»РёРµРЅС‚С‹ hh.ru.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 CLIENTS = RESUME_ACCESS_TYPES.getById("clients");
         /**
-         * Видно всему интернету.
+         * Р’РёРґРЅРѕ РІСЃРµРјСѓ РёРЅС‚РµСЂРЅРµС‚Сѓ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 EVERYONE = RESUME_ACCESS_TYPES.getById("everyone");
         /**
-         * Резюме видно только по прямой ссылке.
+         * Р РµР·СЋРјРµ РІРёРґРЅРѕ С‚РѕР»СЊРєРѕ РїРѕ РїСЂСЏРјРѕР№ СЃСЃС‹Р»РєРµ.
          */
         public static final ru.yaal.project.hhapi.dictionary.entry.entries.small.ResumeAccessType
                 DIRECT = RESUME_ACCESS_TYPES.getById("direct");
     }
 
     /**
-     * Только с указанной зарплатой.
+     * РўРѕР»СЊРєРѕ СЃ СѓРєР°Р·Р°РЅРЅРѕР№ Р·Р°СЂРїР»Р°С‚РѕР№.
      *
      * @see ru.yaal.project.hhapi.search.parameter.OnlyWithSalary
      */

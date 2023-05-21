@@ -22,7 +22,7 @@ final class Page implements ISearchParameter {
     public void setPage(Integer page) throws SearchException {
         if (page < MIN_PAGE) {
             throw new SearchException(
-                    format("Íîìåð ñòðàíèöû ñ âàêàíñèÿìè íå ìîæåò áûòü ìåíüøå %d. Ïîëó÷åí %d.", MIN_PAGE, page));
+                    format("ÐÐ¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ Ð²Ð°ÐºÐ°Ð½ÑÐ¸ÑÐ¼Ð¸ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¼ÐµÐ½ÑŒÑˆÐµ %d. ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½ %d.", MIN_PAGE, page));
         }
         this.page = page;
     }
@@ -34,7 +34,7 @@ final class Page implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Íîìåð ñòðàíèöû";
+        return "ÐÐ¾Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
     }
 
 }

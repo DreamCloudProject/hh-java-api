@@ -9,7 +9,7 @@ import ru.yaal.project.hhapi.dictionary.entry.INullable;
 import ru.yaal.project.hhapi.dictionary.entry.entries.metro.MetroStation;
 
 /**
- * ภไ๐ๅ๑.
+ * ะะดั€ะตั.
  */
 @ToString
 public final class Address implements INullable {

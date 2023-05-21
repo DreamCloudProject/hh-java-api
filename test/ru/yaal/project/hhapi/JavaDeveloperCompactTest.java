@@ -15,7 +15,7 @@ import ru.yaal.project.hhapi.vacancy.VacancyList;
 import static java.lang.System.out;
 
 /**
- * Найдем вакансии программистов java в Питере (компактный вариант).
+ * РќР°Р№РґРµРј РІР°РєР°РЅСЃРёРё РїСЂРѕРіСЂР°РјРјРёСЃС‚РѕРІ java РІ РџРёС‚РµСЂРµ (РєРѕРјРїР°РєС‚РЅС‹Р№ РІР°СЂРёР°РЅС‚).
  */
 public class JavaDeveloperCompactTest {
     @Test
@@ -23,7 +23,7 @@ public class JavaDeveloperCompactTest {
         VacancyList vacancies = HhApi.search(
                 50,
                 new Text("java", Constants.VacancySearchFields.VACANCY_NAME),
-                Area.AREAS.getByName("Санкт-Петербург"),
+                Area.AREAS.getByName("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі"),
                 ProfField.PROF_FIELDS.getById("1.221"),
                 new Salary(3000, 5000, Constants.Currency.USD),
                 Constants.Experience.BETWEEN_3_AND_6,
@@ -34,7 +34,7 @@ public class JavaDeveloperCompactTest {
                 Constants.Employment.FULL
         );
 
-        out.printf("Найдено %d вакансий.\n", vacancies.size());
+        out.printf("РќР°Р№РґРµРЅРѕ %d РІР°РєР°РЅСЃРёР№.\n", vacancies.size());
 
         Vacancy v0 = vacancies.get(0);
         out.println(v0.getId());

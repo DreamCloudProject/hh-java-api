@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Желаемый способ связи (резюме).
+ * Р–РµР»Р°РµРјС‹Р№ СЃРїРѕСЃРѕР± СЃРІСЏР·Рё (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.PreferredContactType
  */
 public final class PreferredContactType extends AbstractDictionaryEntry {

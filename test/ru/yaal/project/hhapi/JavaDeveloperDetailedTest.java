@@ -18,14 +18,14 @@ import ru.yaal.project.hhapi.vacancy.VacancySearch;
 import java.util.List;
 
 /**
- * Найдем вакансии программистов java в Питере (подробный вариант).
+ * РќР°Р№РґРµРј РІР°РєР°РЅСЃРёРё РїСЂРѕРіСЂР°РјРјРёСЃС‚РѕРІ java РІ РџРёС‚РµСЂРµ (РїРѕРґСЂРѕР±РЅС‹Р№ РІР°СЂРёР°РЅС‚).
  */
 public class JavaDeveloperDetailedTest {
     @Test
     public void javaDeveloper() throws SearchException {
         ISearchParameter text = new Text("java", Constants.VacancySearchFields.VACANCY_NAME);
-        ISearchParameter area = Area.AREAS.getByName("Санкт-Петербург");
-        ISearchParameter profField = ProfField.PROF_FIELDS.getById("1.221");//Программирование
+        ISearchParameter area = Area.AREAS.getByName("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі");
+        ISearchParameter profField = ProfField.PROF_FIELDS.getById("1.221");//РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ
         ISearchParameter salary = new Salary(3000, 5000, Constants.Currency.USD);
         ISearchParameter experience = Constants.Experience.BETWEEN_3_AND_6;
         ISearchParameter onlyWithSalary = Constants.OnlyWithSalary.ON;
@@ -48,6 +48,6 @@ public class JavaDeveloperDetailedTest {
 
         List<Vacancy> vacancies = search.search();
 
-        System.out.printf("Нашлось %d вакансий.\n", vacancies.size());
+        System.out.printf("РќР°С€Р»РѕСЃСЊ %d РІР°РєР°РЅСЃРёР№.\n", vacancies.size());
     }
 }

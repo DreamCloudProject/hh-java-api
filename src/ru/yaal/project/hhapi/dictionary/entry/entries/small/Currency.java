@@ -7,7 +7,7 @@ import lombok.ToString;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Βΰλώςΰ.
+ * Π’Π°Π»ΡΡ‚Π°.
  * @see ru.yaal.project.hhapi.dictionary.Constants.Currency
  */
 @ToString(of = {"id", "abbr"})

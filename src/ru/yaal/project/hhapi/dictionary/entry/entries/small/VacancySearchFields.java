@@ -3,8 +3,8 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Область поиска.
- * Может использоваться как параметр поиска вакансий. Допускает множественное значение ("ИЛИ").
+ * РћР±Р»Р°СЃС‚СЊ РїРѕРёСЃРєР°.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. Р”РѕРїСѓСЃРєР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ("РР›Р").
  * @see ru.yaal.project.hhapi.dictionary.Constants.VacancySearchFields
  */
 public final class VacancySearchFields extends AbstractDictionaryEntry {

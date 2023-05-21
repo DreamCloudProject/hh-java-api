@@ -7,7 +7,7 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Опыт работы (вакансия).
+ * РћРїС‹С‚ СЂР°Р±РѕС‚С‹ (РІР°РєР°РЅСЃРёСЏ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.Experience
  */
 public final class Experience extends AbstractDictionaryEntry implements ISearchParameter {
@@ -23,6 +23,6 @@ public final class Experience extends AbstractDictionaryEntry implements ISearch
 
     @Override
     public String getSearchParameterName() {
-        return "Опыт работы";
+        return "РћРїС‹С‚ СЂР°Р±РѕС‚С‹";
     }
 }

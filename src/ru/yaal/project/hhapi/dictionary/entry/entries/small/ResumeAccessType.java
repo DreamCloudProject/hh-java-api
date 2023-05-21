@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Уровень доступа к резюме (резюме).
+ * РЈСЂРѕРІРµРЅСЊ РґРѕСЃС‚СѓРїР° Рє СЂРµР·СЋРјРµ (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.ResumeAccessType
  */
 public final class ResumeAccessType extends AbstractDictionaryEntry {

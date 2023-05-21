@@ -11,10 +11,10 @@ import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 
 /**
- * Зарплата.
- * Может использоваться как параметр поиска вакансий.
- * В результаты поиска включены вакансии с незаполненной зарплатой.
- * Чтобы их исключить, добавьте параметр {@link ru.yaal.project.hhapi.search.parameter.OnlyWithSalary#ON}.
+ * Р—Р°СЂРїР»Р°С‚Р°.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
+ * Р’ СЂРµР·СѓР»СЊС‚Р°С‚С‹ РїРѕРёСЃРєР° РІРєР»СЋС‡РµРЅС‹ РІР°РєР°РЅСЃРёРё СЃ РЅРµР·Р°РїРѕР»РЅРµРЅРЅРѕР№ Р·Р°СЂРїР»Р°С‚РѕР№.
+ * Р§С‚РѕР±С‹ РёС… РёСЃРєР»СЋС‡РёС‚СЊ, РґРѕР±Р°РІСЊС‚Рµ РїР°СЂР°РјРµС‚СЂ {@link ru.yaal.project.hhapi.search.parameter.OnlyWithSalary#ON}.
  */
 @Data
 public final class Salary implements ISearchParameter, INullable {
@@ -49,7 +49,7 @@ public final class Salary implements ISearchParameter, INullable {
     }
 
     /**
-     * Конвертирует зарплату, указанную в произвольной валюте, в рубли.
+     * РљРѕРЅРІРµСЂС‚РёСЂСѓРµС‚ Р·Р°СЂРїР»Р°С‚Сѓ, СѓРєР°Р·Р°РЅРЅСѓСЋ РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕР№ РІР°Р»СЋС‚Рµ, РІ СЂСѓР±Р»Рё.
      */
     public static Salary toRur(Salary salary) {
         Salary salaryRur = new Salary();
@@ -77,7 +77,7 @@ public final class Salary implements ISearchParameter, INullable {
             if (to != null) {
                 params.addParameter(SearchParamNames.SALARY, String.valueOf(to));
             } else {
-                throw new SearchException("Ни минимальная, ни максимальная зарплата не указана.");
+                throw new SearchException("РќРё РјРёРЅРёРјР°Р»СЊРЅР°СЏ, РЅРё РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ Р·Р°СЂРїР»Р°С‚Р° РЅРµ СѓРєР°Р·Р°РЅР°.");
             }
         }
         params.setParameter(SearchParamNames.CURRENCY, getCurrency().getId());
@@ -91,6 +91,6 @@ public final class Salary implements ISearchParameter, INullable {
 
     @Override
     public String getSearchParameterName() {
-        return "Зарплата";
+        return "Р—Р°СЂРїР»Р°С‚Р°";
     }
 }

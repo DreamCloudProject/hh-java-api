@@ -10,22 +10,22 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Линия метро.
+ * Р›РёРЅРёСЏ РјРµС‚СЂРѕ.
  */
 public class MetroLine extends AbstractDictionaryEntry implements ISearchParameter {
     public static final MetroLine NULL_METRO_LINE = new MetroLine();
-    public static final MetroLineDictionary MOSCOW = MetroInitializer.getInstance().getMetroCities().getByName("Москва").getLines();
-    public static final MetroLineDictionary SAINT_PETERSBURG = MetroInitializer.getInstance().getMetroCities().getByName("Санкт-Петербург").getLines();
-    public static final MetroLineDictionary KHARKOV = MetroInitializer.getInstance().getMetroCities().getByName("Харьков").getLines();
-    public static final MetroLineDictionary KAZAN = MetroInitializer.getInstance().getMetroCities().getByName("Казань").getLines();
-    public static final MetroLineDictionary DNEPROPETROVSK = MetroInitializer.getInstance().getMetroCities().getByName("Днепропетровск").getLines();
-    public static final MetroLineDictionary KIEV = MetroInitializer.getInstance().getMetroCities().getByName("Киев").getLines();
-    public static final MetroLineDictionary EKATERINGURG = MetroInitializer.getInstance().getMetroCities().getByName("Екатеринбург").getLines();
-    public static final MetroLineDictionary NOVOSIBIRSK = MetroInitializer.getInstance().getMetroCities().getByName("Новосибирск").getLines();
-    public static final MetroLineDictionary NIZHNI_NOVGOROD = MetroInitializer.getInstance().getMetroCities().getByName("Нижний Новгород").getLines();
-    public static final MetroLineDictionary ALMATY = MetroInitializer.getInstance().getMetroCities().getByName("Алматы").getLines();
-    public static final MetroLineDictionary MINSK = MetroInitializer.getInstance().getMetroCities().getByName("Минск").getLines();
-    public static final MetroLineDictionary SAMARA = MetroInitializer.getInstance().getMetroCities().getByName("Самара").getLines();
+    public static final MetroLineDictionary MOSCOW = MetroInitializer.getInstance().getMetroCities().getByName("РњРѕСЃРєРІР°").getLines();
+    public static final MetroLineDictionary SAINT_PETERSBURG = MetroInitializer.getInstance().getMetroCities().getByName("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі").getLines();
+    public static final MetroLineDictionary KHARKOV = MetroInitializer.getInstance().getMetroCities().getByName("РҐР°СЂСЊРєРѕРІ").getLines();
+    public static final MetroLineDictionary KAZAN = MetroInitializer.getInstance().getMetroCities().getByName("РљР°Р·Р°РЅСЊ").getLines();
+    public static final MetroLineDictionary DNEPROPETROVSK = MetroInitializer.getInstance().getMetroCities().getByName("Р”РЅРµРїСЂРѕРїРµС‚СЂРѕРІСЃРє").getLines();
+    public static final MetroLineDictionary KIEV = MetroInitializer.getInstance().getMetroCities().getByName("РљРёРµРІ").getLines();
+    public static final MetroLineDictionary EKATERINGURG = MetroInitializer.getInstance().getMetroCities().getByName("Р•РєР°С‚РµСЂРёРЅР±СѓСЂРі").getLines();
+    public static final MetroLineDictionary NOVOSIBIRSK = MetroInitializer.getInstance().getMetroCities().getByName("РќРѕРІРѕСЃРёР±РёСЂСЃРє").getLines();
+    public static final MetroLineDictionary NIZHNI_NOVGOROD = MetroInitializer.getInstance().getMetroCities().getByName("РќРёР¶РЅРёР№ РќРѕРІРіРѕСЂРѕРґ").getLines();
+    public static final MetroLineDictionary ALMATY = MetroInitializer.getInstance().getMetroCities().getByName("РђР»РјР°С‚С‹").getLines();
+    public static final MetroLineDictionary MINSK = MetroInitializer.getInstance().getMetroCities().getByName("РњРёРЅСЃРє").getLines();
+    public static final MetroLineDictionary SAMARA = MetroInitializer.getInstance().getMetroCities().getByName("РЎР°РјР°СЂР°").getLines();
     @Getter
     @Setter
     @SuppressWarnings("PMD.UnusedPrivateField")
@@ -46,6 +46,6 @@ public class MetroLine extends AbstractDictionaryEntry implements ISearchParamet
 
     @Override
     public String getSearchParameterName() {
-        return "Линия метро";
+        return "Р›РёРЅРёСЏ РјРµС‚СЂРѕ";
     }
 }

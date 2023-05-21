@@ -5,12 +5,12 @@ import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 import java.net.URL;
 
 /**
- * Город с метро.
+ * Р“РѕСЂРѕРґ СЃ РјРµС‚СЂРѕ.
  */
 public class MetroCity extends AbstractDictionaryEntry {
     public static final MetroCity NULL_METRO_CITY = new MetroCity();
     /**
-     * Справочник городов с метро.
+     * РЎРїСЂР°РІРѕС‡РЅРёРє РіРѕСЂРѕРґРѕРІ СЃ РјРµС‚СЂРѕ.
      */
     public static final MetroCityDictionary CITIES = MetroInitializer.getInstance().getMetroCities();
     private URL url;

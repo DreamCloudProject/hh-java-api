@@ -11,7 +11,7 @@ import ru.yaal.project.hhapi.search.SearchParameterBox;
 import java.net.URLEncoder;
 
 /**
- * Поиск в тексте вакансии (название вакансии, название компании, описание вакансии).
+ * РџРѕРёСЃРє РІ С‚РµРєСЃС‚Рµ РІР°РєР°РЅСЃРёРё (РЅР°Р·РІР°РЅРёРµ РІР°РєР°РЅСЃРёРё, РЅР°Р·РІР°РЅРёРµ РєРѕРјРїР°РЅРёРё, РѕРїРёСЃР°РЅРёРµ РІР°РєР°РЅСЃРёРё).
  *
  * @see VacancySearchFields
  */
@@ -21,20 +21,20 @@ public class Text implements ISearchParameter {
     private VacancySearchFields[] fields = {};
 
     /**
-     * Поиск в тексте вакансии.
-     * Область поиска: название вакансии, название компании и описание вакансии.
+     * РџРѕРёСЃРє РІ С‚РµРєСЃС‚Рµ РІР°РєР°РЅСЃРёРё.
+     * РћР±Р»Р°СЃС‚СЊ РїРѕРёСЃРєР°: РЅР°Р·РІР°РЅРёРµ РІР°РєР°РЅСЃРёРё, РЅР°Р·РІР°РЅРёРµ РєРѕРјРїР°РЅРёРё Рё РѕРїРёСЃР°РЅРёРµ РІР°РєР°РЅСЃРёРё.
      *
-     * @param text Подстрока для поиска.
+     * @param text РџРѕРґСЃС‚СЂРѕРєР° РґР»СЏ РїРѕРёСЃРєР°.
      */
     public Text(String text) {
         this.text = text;
     }
 
     /**
-     * Поиск в тексте вакансии.
+     * РџРѕРёСЃРє РІ С‚РµРєСЃС‚Рµ РІР°РєР°РЅСЃРёРё.
      *
-     * @param text   Подстрока для поиска.
-     * @param fields Область поиска {@linkplain VacancySearchFields}
+     * @param text   РџРѕРґСЃС‚СЂРѕРєР° РґР»СЏ РїРѕРёСЃРєР°.
+     * @param fields РћР±Р»Р°СЃС‚СЊ РїРѕРёСЃРєР° {@linkplain VacancySearchFields}
      */
     public Text(String text, VacancySearchFields... fields) {
         this.text = text;
@@ -58,7 +58,7 @@ public class Text implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Текст";
+        return "РўРµРєСЃС‚";
     }
 
 }

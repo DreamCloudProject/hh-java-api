@@ -9,16 +9,16 @@ import ru.yaal.project.hhapi.vacancy.VacancySearch;
 import java.util.List;
 
 /**
- * Методы для быстрого поиска вакансий.
+ * РњРµС‚РѕРґС‹ РґР»СЏ Р±С‹СЃС‚СЂРѕРіРѕ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
  */
 public class HhApi {
     public static final int DEFAULT_VACANCY_LIMIT = 25;
 
     /**
-     * Поиск вакансий по параметрам.
+     * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј.
      *
-     * @param vacancyLimit     Лимит вакансий.
-     * @param searchParameters Параметры поиска вакансий.
+     * @param vacancyLimit     Р›РёРјРёС‚ РІР°РєР°РЅСЃРёР№.
+     * @param searchParameters РџР°СЂР°РјРµС‚СЂС‹ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
      */
     public static VacancyList search(int vacancyLimit, ISearchParameter... searchParameters)
             throws SearchException {
@@ -30,10 +30,10 @@ public class HhApi {
     }
 
     /**
-     * Поиск вакансий по параметрам.
-     * Лимит вакансий по-умолчанию ({@value HhApi#DEFAULT_VACANCY_LIMIT}).
+     * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј.
+     * Р›РёРјРёС‚ РІР°РєР°РЅСЃРёР№ РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ ({@value HhApi#DEFAULT_VACANCY_LIMIT}).
      *
-     * @param searchParameters Параметры поиска вакансий.
+     * @param searchParameters РџР°СЂР°РјРµС‚СЂС‹ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
      * @see HhApi#DEFAULT_VACANCY_LIMIT
      */
     public static VacancyList search(ISearchParameter... searchParameters) throws SearchException {
@@ -41,10 +41,10 @@ public class HhApi {
     }
 
     /**
-     * Поиск вакансий по параметрам.
-     * Лимит вакансий по-умолчанию ({@value HhApi#DEFAULT_VACANCY_LIMIT}).
+     * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј.
+     * Р›РёРјРёС‚ РІР°РєР°РЅСЃРёР№ РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ ({@value HhApi#DEFAULT_VACANCY_LIMIT}).
      *
-     * @param searchParameters Параметры поиска вакансий.
+     * @param searchParameters РџР°СЂР°РјРµС‚СЂС‹ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№.
      * @see HhApi#DEFAULT_VACANCY_LIMIT
      */
     public static VacancyList search(List<ISearchParameter> searchParameters) throws SearchException {

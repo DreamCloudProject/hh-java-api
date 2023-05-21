@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Ïîë (ðåçþìå).
+ * ÐŸÐ¾Ð» (Ñ€ÐµÐ·ÑŽÐ¼Ðµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.Gender
  */
 public final class Gender extends AbstractDictionaryEntry {

@@ -16,14 +16,14 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- * Профессиональная область.
- * Может использоваться как параметр поиска вакансий. Допускает множественное значение ("ИЛИ").
+ * РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ РѕР±Р»Р°СЃС‚СЊ.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. Р”РѕРїСѓСЃРєР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ("РР›Р").
  */
 public class ProfField extends AbstractDictionaryEntry implements ISearchParameter {
     private static final Logger LOG = LoggerFactory.getLogger(ProfField.class);
     public static final ProfField NULL_PROF_FIELD = new ProfField();
     /**
-     * Справочник профессиональных областей.
+     * РЎРїСЂР°РІРѕС‡РЅРёРє РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹С… РѕР±Р»Р°СЃС‚РµР№.
      */
     public static final ProfFieldDictionary PROF_FIELDS = loadProfFields();
     @Getter
@@ -34,7 +34,7 @@ public class ProfField extends AbstractDictionaryEntry implements ISearchParamet
     private static ProfFieldDictionary loadProfFields() {
         ProfFieldDictionary profFields;
         try {
-            LOG.debug("Загружаю справочник профессиональных областей.");
+            LOG.debug("Р—Р°РіСЂСѓР¶Р°СЋ СЃРїСЂР°РІРѕС‡РЅРёРє РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹С… РѕР±Р»Р°СЃС‚РµР№.");
             IContentLoader loader = ContentLoaderFactory.newInstanceLongTermCache();
             String content = loader.loadContent(UrlConstants.SPECIALIZATIONS_URL);
             IParser<ProfFieldDictionary> parse = new ProfFieldsParser();
@@ -53,6 +53,6 @@ public class ProfField extends AbstractDictionaryEntry implements ISearchParamet
 
     @Override
     public String getSearchParameterName() {
-        return "Профессиональная область";
+        return "РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ РѕР±Р»Р°СЃС‚СЊ";
     }
 }

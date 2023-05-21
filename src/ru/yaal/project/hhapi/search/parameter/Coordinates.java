@@ -7,7 +7,7 @@ import ru.yaal.project.hhapi.search.SearchParamNames;
 import ru.yaal.project.hhapi.search.SearchParameterBox;
 
 /**
- *  Гео-координаты.
+ *  Р“РµРѕ-РєРѕРѕСЂРґРёРЅР°С‚С‹.
  */
 @Data
 public class Coordinates implements ISearchParameter {
@@ -35,7 +35,7 @@ public class Coordinates implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Географические координаты";
+        return "Р“РµРѕРіСЂР°С„РёС‡РµСЃРєРёРµ РєРѕРѕСЂРґРёРЅР°С‚С‹";
     }
 
 }

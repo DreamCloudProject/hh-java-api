@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Время в пути (резюме).
+ * Р’СЂРµРјСЏ РІ РїСѓС‚Рё (СЂРµР·СЋРјРµ).
  * @see ru.yaal.project.hhapi.dictionary.Constants.TravelTime
  */
 public final class TravelTime extends AbstractDictionaryEntry {

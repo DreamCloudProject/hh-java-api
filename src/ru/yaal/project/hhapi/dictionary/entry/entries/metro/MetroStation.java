@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Станция метро.
+ * РЎС‚Р°РЅС†РёСЏ РјРµС‚СЂРѕ.
  */
 public class MetroStation extends MetroLine {
     public static final MetroStation NULL_METRO_STATION = new MetroStation();
     /**
-     * Справочник станций метро.
+     * РЎРїСЂР°РІРѕС‡РЅРёРє СЃС‚Р°РЅС†РёР№ РјРµС‚СЂРѕ.
      */
     private static final Map<String, MetroStation> STATIONS = new HashMap<>();
 
@@ -44,7 +44,7 @@ public class MetroStation extends MetroLine {
     private Double lng;
 
     /**
-     * Поиск среди всех станций метро всех городов (по ID станции).
+     * РџРѕРёСЃРє СЃСЂРµРґРё РІСЃРµС… СЃС‚Р°РЅС†РёР№ РјРµС‚СЂРѕ РІСЃРµС… РіРѕСЂРѕРґРѕРІ (РїРѕ ID СЃС‚Р°РЅС†РёРё).
      */
     public static MetroStation getStationById(String stationId) {
         return STATIONS.get(stationId);

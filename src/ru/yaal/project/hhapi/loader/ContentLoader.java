@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.*;
 
 /**
- * Загруажет контент с адресов, доступных без авторизации.
+ * Р—Р°РіСЂСѓР°Р¶РµС‚ РєРѕРЅС‚РµРЅС‚ СЃ Р°РґСЂРµСЃРѕРІ, РґРѕСЃС‚СѓРїРЅС‹С… Р±РµР· Р°РІС‚РѕСЂРёР·Р°С†РёРё.
  *
  * @author Aleks
  */
@@ -47,7 +47,7 @@ class ContentLoader implements IContentLoader {
     }
 
     private String loadContentFromNet(String url) throws IOException {
-        LOG.debug("Загружаю данные с {}.", url);
+        LOG.debug("Р—Р°РіСЂСѓР¶Р°СЋ РґР°РЅРЅС‹Рµ СЃ {}.", url);
         URL hhUrl = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) hhUrl.openConnection();
         connection.setRequestMethod("GET");

@@ -34,7 +34,7 @@ public final class SmallDictionariesInitializer {
     private IDictionary<VacancyType> vacancyType;
 
     private SmallDictionariesInitializer() {
-        LOG.debug("Создаю инстанс SmallDictionariesInitializer");
+        LOG.debug("РЎРѕР·РґР°СЋ РёРЅСЃС‚Р°РЅСЃ SmallDictionariesInitializer");
         loadSmallDictionaries();
     }
 

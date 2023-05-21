@@ -9,29 +9,29 @@ import static java.lang.String.format;
 import static ru.yaal.project.hhapi.vacancy.PerPage.MAX_PER_PAGE;
 
 /**
- * Поиск вакансий.
+ * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№.
  */
 public class VacancySearch extends AbstractSearch<VacancyList> {
     private final int vacancyLimit;
     private final List<Vacancy> vacancies = new ArrayList<>();
 
     /**
-     * Поиск вакансий.
-     * Лимит вакансий по-умолчанию ({@value ru.yaal.project.hhapi.HhApi#DEFAULT_VACANCY_LIMIT}).
+     * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№.
+     * Р›РёРјРёС‚ РІР°РєР°РЅСЃРёР№ РїРѕ-СѓРјРѕР»С‡Р°РЅРёСЋ ({@value ru.yaal.project.hhapi.HhApi#DEFAULT_VACANCY_LIMIT}).
      */
     public VacancySearch() {
         this(DEFAULT_VACANCIES_LIMIT);
     }
 
     /**
-     * Поиск вакансий.
+     * РџРѕРёСЃРє РІР°РєР°РЅСЃРёР№.
      *
-     * @param vacancyLimit Лимит вакансий.
+     * @param vacancyLimit Р›РёРјРёС‚ РІР°РєР°РЅСЃРёР№.
      */
     public VacancySearch(int vacancyLimit) {
         if (vacancyLimit < MIN_VACANCIES_LIMIT || vacancyLimit > MAX_VACANCIES_LIMIT) {
             throw new IllegalArgumentException(format(
-                    "Количество вакансий может быть в пределах от %d до %d. Получено: %d.",
+                    "РљРѕР»РёС‡РµСЃС‚РІРѕ РІР°РєР°РЅСЃРёР№ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІ РїСЂРµРґРµР»Р°С… РѕС‚ %d РґРѕ %d. РџРѕР»СѓС‡РµРЅРѕ: %d.",
                     MIN_VACANCIES_LIMIT, MAX_VACANCIES_LIMIT, vacancyLimit));
         }
         this.vacancyLimit = vacancyLimit;

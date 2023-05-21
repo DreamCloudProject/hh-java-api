@@ -3,7 +3,7 @@ package ru.yaal.project.hhapi.dictionary.entry.entries.small;
 import ru.yaal.project.hhapi.dictionary.entry.AbstractDictionaryEntry;
 
 /**
- * Тип вакансии.
+ * РўРёРї РІР°РєР°РЅСЃРёРё.
  * @see ru.yaal.project.hhapi.dictionary.Constants.VacancyType
  */
 public class VacancyType extends AbstractDictionaryEntry {

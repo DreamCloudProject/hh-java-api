@@ -7,7 +7,7 @@ import ru.yaal.project.hhapi.vacancy.Vacancy;
 import ru.yaal.project.hhapi.vacancy.VacancyList;
 
 /**
- * Ищем вакансии с текстом "Hello World"
+ * РС‰РµРј РІР°РєР°РЅСЃРёРё СЃ С‚РµРєСЃС‚РѕРј "Hello World"
  */
 public class HelloWorldTest {
     @Test

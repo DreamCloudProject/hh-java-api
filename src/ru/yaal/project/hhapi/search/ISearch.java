@@ -1,13 +1,13 @@
 package ru.yaal.project.hhapi.search;
 
 /**
- * Поиск.
+ * РџРѕРёСЃРє.
  */
 public interface ISearch<T> {
     T search() throws SearchException;
 
     /**
-     * Можно строить цепочку параметров.
+     * РњРѕР¶РЅРѕ СЃС‚СЂРѕРёС‚СЊ С†РµРїРѕС‡РєСѓ РїР°СЂР°РјРµС‚СЂРѕРІ.
      */
     ISearch<T> addParameter(ISearchParameter parameter) throws SearchException;
 

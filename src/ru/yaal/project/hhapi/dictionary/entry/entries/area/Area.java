@@ -18,18 +18,18 @@ import ru.yaal.project.hhapi.search.SearchParameterBox;
 import java.net.URL;
 
 /**
- * Район.
- * Может использоваться как параметр поиска вакансий. Допускает множественное значение ("ИЛИ").
+ * Р Р°Р№РѕРЅ.
+ * РњРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РїР°СЂР°РјРµС‚СЂ РїРѕРёСЃРєР° РІР°РєР°РЅСЃРёР№. Р”РѕРїСѓСЃРєР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ("РР›Р").
  */
 public class Area extends AbstractDictionaryEntry implements ISearchParameter {
     private static final Logger LOG = LoggerFactory.getLogger(Area.class);
     public static final Area NULL_AREA = new Area();
     /**
-     * Справочник районов.
+     * РЎРїСЂР°РІРѕС‡РЅРёРє СЂР°Р№РѕРЅРѕРІ.
      */
     public static final AreaDictionary AREAS = loadAreas();
-    public static final Area MOSCOW = AREAS.getByName("Москва");
-    public static final Area SAINT_PETERSBURG = AREAS.getByName("Санкт-Петербург");
+    public static final Area MOSCOW = AREAS.getByName("РњРѕСЃРєРІР°");
+    public static final Area SAINT_PETERSBURG = AREAS.getByName("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі");
     @Getter
     @Setter
     @SuppressWarnings("PMD.UnusedPrivateField")
@@ -42,7 +42,7 @@ public class Area extends AbstractDictionaryEntry implements ISearchParameter {
     private static AreaDictionary loadAreas() {
         AreaDictionary areas;
         try {
-            LOG.debug("Загружаю справочник районов.");
+            LOG.debug("Р—Р°РіСЂСѓР¶Р°СЋ СЃРїСЂР°РІРѕС‡РЅРёРє СЂР°Р№РѕРЅРѕРІ.");
             IContentLoader loader = ContentLoaderFactory.newInstanceLongTermCache();
             String content = loader.loadContent(UrlConstants.AREAS_URL);
             IParser<AreaDictionary> parse = new AreasParser();
@@ -61,7 +61,7 @@ public class Area extends AbstractDictionaryEntry implements ISearchParameter {
 
     @Override
     public String getSearchParameterName() {
-        return "Регион";
+        return "Р РµРіРёРѕРЅ";
     }
 
 }
