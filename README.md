@@ -3,9 +3,9 @@ Java API for HeadHunter (hh.ru)
 
 ## Примеры
 
-* [Пример 1: "Hello World"](https://github.com/Aleks-Ya/hh-java-api/blob/master/test/ru/yaal/project/hhapi/HelloWorldTest.java)
-* [Пример 2: "Java Developer (компактный)"](https://github.com/Aleks-Ya/hh-java-api/blob/master/test/ru/yaal/project/hhapi/JavaDeveloperCompactTest.java)
-* [Пример 3: "Java Developer (подробный)"](https://github.com/Aleks-Ya/hh-java-api/blob/master/test/ru/yaal/project/hhapi/JavaDeveloperDetailedTest.java)
+* [Пример 1: "Hello World"](https://github.com/DreamCloudProject/hh-java-api/blob/master/test/ru/yaal/project/hhapi/HelloWorldTest.java)
+* [Пример 2: "Java Developer (компактный)"](https://github.com/DreamCloudProject/hh-java-api/blob/master/test/ru/yaal/project/hhapi/JavaDeveloperCompactTest.java)
+* [Пример 3: "Java Developer (подробный)"](https://github.com/DreamCloudProject/hh-java-api/blob/master/test/ru/yaal/project/hhapi/JavaDeveloperDetailedTest.java)
 
 ## Что есть в текущей версии
 В версии 0.2 реализована работа со всеми возможностями HH, не требующими авторизации.
