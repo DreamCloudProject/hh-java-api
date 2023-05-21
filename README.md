@@ -1,14 +1,6 @@
 Java API for HeadHunter (hh.ru)
 ===========
 
-## Последняя версия
-
-    <dependency>
-        <groupId>ru.yaal.project.hhapi</groupId>
-        <artifactId>HhJavaApi</artifactId>
-        <version>0.2.6</version>
-    </dependency>
-
 ## Примеры
 
 * [Пример 1: "Hello World"](https://github.com/Aleks-Ya/hh-java-api/blob/master/test/ru/yaal/project/hhapi/HelloWorldTest.java)
@@ -43,5 +35,3 @@ Java API for HeadHunter (hh.ru)
 
 ## Ссылки
 Анализ качества кода в SonarCube
-
-Яблоков Алексей
