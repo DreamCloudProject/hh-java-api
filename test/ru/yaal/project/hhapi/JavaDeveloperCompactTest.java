@@ -40,21 +40,21 @@ public class JavaDeveloperCompactTest {
         out.println(v0.getId());
         out.println(v0.getName());
         out.println(v0.getSalary());
-        out.println(v0.getProfFields());
-        out.println(v0.getExperience());
-        out.println(v0.getAcceptHandicapped());
+        //out.println(v0.getProfFields());
+        //out.println(v0.getExperience());
+        //out.println(v0.getAcceptHandicapped());
         out.println(v0.getAddress());
         out.println(v0.getArea());
-        out.println(v0.getSchedule());
+        //out.println(v0.getSchedule());
         out.println(v0.getUrl());
-        out.println(v0.getArchived());
-        out.println(v0.getDescription());
+        //out.println(v0.getArchived());
+        //out.println(v0.getDescription());
         out.println(v0.getCreatedAt());
         out.println(v0.getEmployer());
         out.println(v0.getType());
         out.println(v0.getResponseLetterRequired());
         out.println(v0.getRelations());
-        out.println(v0.getEmployment());
+        //out.println(v0.getEmployment());
         out.println(v0.getAlternateUrl());
     }
 }

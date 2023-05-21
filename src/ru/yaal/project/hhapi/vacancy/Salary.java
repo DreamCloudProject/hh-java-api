@@ -14,7 +14,6 @@ import ru.yaal.project.hhapi.search.SearchParameterBox;
  * Зарплата.
  * Может использоваться как параметр поиска вакансий.
  * В результаты поиска включены вакансии с незаполненной зарплатой.
- * Чтобы их исключить, добавьте параметр {@link ru.yaal.project.hhapi.search.parameter.OnlyWithSalary#ON}.
  */
 @Data
 public final class Salary implements ISearchParameter, INullable {
@@ -34,6 +33,7 @@ public final class Salary implements ISearchParameter, INullable {
 
     /**
      * @see Salary
+     * @param salary зараплата
      */
     public Salary(Integer salary) {
         this(salary, salary, Constants.Currency.RUR);
@@ -41,6 +41,9 @@ public final class Salary implements ISearchParameter, INullable {
 
     /**
      * @see Salary
+     * @param currency валюта
+     * @param from уровень зарплаты от
+     * @param to уровень зарплаты до
      */
     public Salary(Integer from, Integer to, Currency currency) {
         setFrom(from);
@@ -50,6 +53,8 @@ public final class Salary implements ISearchParameter, INullable {
 
     /**
      * Конвертирует зарплату, указанную в произвольной валюте, в рубли.
+     * @param salary объект зарплаты
+     * @return объект зарплаты
      */
     public static Salary toRur(Salary salary) {
         Salary salaryRur = new Salary();

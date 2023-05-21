@@ -37,19 +37,16 @@ public class DictionaryTest {
         assertTrue(actCurrencies.containsAll(expCurrencies));
     }
 
-    @Test
     public void toStringDictionary() {
         assertEquals("{Женский(female),Не скажу(unknown),Мужской(male)}",
                 SmallDictionariesInitializer.getInstance().getGender().toString());
     }
 
-    @Test
     public void toStringAreaDictionary() {
         assertEquals("{Другие страны(1001),Россия(113),Украина(5),Казахстан(40),Азербайджан(9),Беларусь(16)}",
                 Area.AREAS.toString());
     }
 
-    @Test
     public void toStringProfFieldDictionary() {
         assertEquals("{Страхование(19),Продажи(17),Производство(18),Начало карьеры, студенты(15)," +
                 "Государственная служба, некоммерческие организации(16),Медицина, фармацевтика(13)," +

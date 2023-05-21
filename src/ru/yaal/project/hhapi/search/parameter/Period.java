@@ -20,6 +20,7 @@ public final class Period implements ISearchParameter {
      * Период поиска вакансий: за сколько дней искать вакансии.
      *
      * @param period Период поиска вакансий. Максимум 30 дней (ограничение HeadHunter).
+     * @throws SearchException если поиск не работает
      */
     public Period(Integer period) throws SearchException {
         setPeriod(period);

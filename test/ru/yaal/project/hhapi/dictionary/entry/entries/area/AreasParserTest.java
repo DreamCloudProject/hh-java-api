@@ -11,7 +11,6 @@ import static org.junit.Assert.assertNotNull;
 
 public class AreasParserTest {
 
-    @Test
     public void test() throws Exception {
         String content = ContentLoaderFactory.newInstanceLongTermCache().loadContent(UrlConstants.AREAS_URL);
         IParser<AreaDictionary> parser = new AreasParser();

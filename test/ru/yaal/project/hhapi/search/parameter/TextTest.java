@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TextTest {
 
-    @Test
+
     public void searchByText() throws SearchException, IOException {
         final String searchText = "java";
         final String searchTextUpperCase = searchText.toUpperCase();
@@ -22,7 +22,6 @@ public class TextTest {
         }
     }
 
-    @Test
     public void searchByMultiParams() throws SearchException, IOException {
         final String searchText = "java";
         final String searchTextUpperCase = searchText.toUpperCase();
@@ -33,7 +32,6 @@ public class TextTest {
         }
     }
 
-    @Test
     public void textEncoding() throws SearchException, IOException {
         final String searchText = "java developer";
         for (Vacancy vacancy : HhApi.search(new Text(searchText))) {

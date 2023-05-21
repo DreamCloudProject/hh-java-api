@@ -8,9 +8,9 @@ import static org.junit.Assert.*;
 
 public class MetroLineDictionaryTest {
     public static final String LINE_ID = "15";
-    public static final String LINE_NAME = "Московско-Петроградская";
+    public static final String LINE_NAME = "РњРѕСЃРєРѕРІСЃРєРѕ-РџРµС‚СЂРѕРіСЂР°РґСЃРєР°СЏ";
     public static final String STATION_ID = "14.199";
-    public static final String STATION_NAME = "Площадь Восстания";
+    public static final String STATION_NAME = "РџР»РѕС‰Р°РґСЊ Р’РѕСЃСЃС‚Р°РЅРёСЏ";
     private MetroLineDictionary dictionary;
 
     @Before
@@ -47,6 +47,6 @@ public class MetroLineDictionaryTest {
     public void hasCityWithName() {
         assertTrue(dictionary.hasName(LINE_NAME));
         assertTrue(dictionary.hasName(STATION_NAME));
-        assertFalse(dictionary.hasName("Урюпинск"));
+        assertFalse(dictionary.hasName("РЈСЂСЋРїРёРЅСЃРє"));
     }
 }

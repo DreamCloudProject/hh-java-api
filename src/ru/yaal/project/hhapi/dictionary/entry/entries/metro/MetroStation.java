@@ -45,6 +45,8 @@ public class MetroStation extends MetroLine {
 
     /**
      * Поиск среди всех станций метро всех городов (по ID станции).
+     * @param stationId идентификатор станции метро
+     * @return станция метро
      */
     public static MetroStation getStationById(String stationId) {
         return STATIONS.get(stationId);

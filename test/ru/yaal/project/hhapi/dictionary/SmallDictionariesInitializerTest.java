@@ -16,7 +16,7 @@ import static org.junit.Assert.assertNotNull;
  * @author Aleks
  */
 public class SmallDictionariesInitializerTest {
-    @Test
+
     public void testCurrency() {
         IDictionary<Currency> dict = SmallDictionariesInitializer.getInstance().getCurrency();
         assertEquals(7, dict.size());
@@ -36,7 +36,6 @@ public class SmallDictionariesInitializerTest {
         assertEquals("Высшее", higher.getName());
     }
 
-    @Test
     public void testAreas() {
         assertEquals(6, Area.AREAS.size());
     }

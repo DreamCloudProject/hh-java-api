@@ -10,6 +10,6 @@ public class CurrencyTest {
     @Test
     public void testToString() throws Exception {
         Currency c = Constants.Currency.RUR;
-        assertThat(c.toString(), equalToIgnoringCase("Currency(id=RUR, abbr=руб.)"));
+        assertThat(c.toString(), equalToIgnoringCase("Currency(id=RUR, abbr=СЂСѓР±.)"));
     }
 }

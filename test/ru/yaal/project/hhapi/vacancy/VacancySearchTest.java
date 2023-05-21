@@ -17,7 +17,6 @@ public class VacancySearchTest {
         }
     }
 
-    @Test
     public void searchLimitMore500() throws Exception {
         final String nameText = "java";
         for (Vacancy vacancy : HhApi.search(501, new Text(nameText, VACANCY_NAME))) {

@@ -15,10 +15,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <scm>
-        <url>https://github.com/Aleks-Ya/hh-java-api.git</url>
-        <connection>scm:git:git@github.com:Aleks-Ya/hh-java-api.git</connection>
-        <developerConnection>scm:git:git@github.com:Aleks-Ya/hh-java-api.git</developerConnection>
+        <connection>scm:git:git@github.com:DreamCloudProject/hh-java-api.git</connection>
+        <developerConnection>scm:git:ssh://github.com/DreamCloudProject/hh-java-api.git</developerConnection>
+        <url>https://github.com/DreamCloudProject/hh-java-api.git</url>
     </scm>
 
     <developers>
@@ -28,25 +29,35 @@
             <email>ya_al@bk.ru</email>
             <timezone>UTC+4</timezone>
         </developer>
+        <developer>
+            <name>Alexander Yanchin</name>
+            <email>ayanchin85@gmail.com</email>
+            <organization>mastermindcms</organization>
+            <organizationUrl>http://www.mastermindcms.com</organizationUrl>
+        </developer>
     </developers>
 
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>9</version>
     </parent>
 
     <properties>
-        <project.build.sourceEncoding>cp1251</project.build.sourceEncoding>
-        <java>1.7</java>
-        <lombok>1.16.0</lombok>
-        <gson>2.2.4</gson>
-        <powermock>1.5.1</powermock>
-        <mockito>1.9.5</mockito>
-        <slf4j>1.7.5</slf4j>
-        <junit>4.11</junit>
+        <maven.compiler.release>11</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java>11</java>
+        <lombok>1.18.2</lombok>
+        <gson>2.10.1</gson>
+        <powermock>1.7.4</powermock>
+        <mockito>1.10.19</mockito>
+        <slf4j>2.0.7</slf4j>
+        <junit>4.13.2</junit>
         <hamcrest-all>1.3</hamcrest-all>
-        <hamcrest-date>0.9.3</hamcrest-date>
+        <hamcrest-date>0.9.5</hamcrest-date>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <build>
@@ -86,15 +97,16 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
-                <configuration>
-                    <source>${java}</source>
-                    <target>${java}</target>
-                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.15</version>
                 <configuration>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                     <systemProperties>
                         <property>
                             <name>use_test_cache</name>
@@ -109,20 +121,6 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
                         <phase>package</phase>
                         <goals>
                             <goal>jar</goal>

@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 /**
@@ -51,7 +52,7 @@ class ContentLoader implements IContentLoader {
         URL hhUrl = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) hhUrl.openConnection();
         connection.setRequestMethod("GET");
-        addHeader("User-Agent", "HhJavaApi/1.0 (ya_al@bk.ru)");
+        addHeader("User-Agent", "HhJavaApi/1.0");
         addHeader("Accept", "application/json");
         setHeaders(connection);
         connection.connect();
@@ -91,7 +92,7 @@ class ContentLoader implements IContentLoader {
     private String readInputStreamToString(HttpURLConnection conn)
             throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(
-                conn.getInputStream(), "UTF-8"));
+                conn.getInputStream(), StandardCharsets.UTF_8));
         StringBuilder builder = new StringBuilder();
         while (true) {
             String line = reader.readLine();

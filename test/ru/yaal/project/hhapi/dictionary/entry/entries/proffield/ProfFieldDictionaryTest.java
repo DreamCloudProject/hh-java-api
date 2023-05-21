@@ -8,9 +8,9 @@ import static org.junit.Assert.*;
 
 public class ProfFieldDictionaryTest {
     private static final String FIELD_ID = "1";
-    private static final String FIELD_NAME = "»Ì‘Ó–Ï¿ˆ»ÓÕÌ€Â “Â’ÌŒÎŒ„»Ë, »Ì“Â–Ì≈Ú, “ÂÀÂ ÓÃ";
+    private static final String FIELD_NAME = "–ò–Ω–§–æ–†–º–ê—Ü–ò–æ–ù–Ω–´–µ –¢–µ–•–Ω–û–ª–û–≥–ò–∏, –ò–Ω–¢–µ–†–Ω–ï—Ç, –¢–µ–õ–µ–ö–æ–ú";
     private static final String SPECIALIZATION_ID = "1.221";
-    private static final String SPECIALIZATION_NAME = "œŒ„–‡ÃÏ»Œ‚¿Ì»Â, –‡«¿·ŒÚ ‡";
+    private static final String SPECIALIZATION_NAME = "–ü—Ä–û–≥–†–∞–ú–º–ò—Ä–û–≤–ê–Ω–ò–µ, –†–∞–ó—Ä–ê–±–û—Ç–ö–∞";
     private ProfFieldDictionary dictionary;
 
     @Before

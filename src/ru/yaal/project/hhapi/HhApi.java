@@ -19,6 +19,8 @@ public class HhApi {
      *
      * @param vacancyLimit     Лимит вакансий.
      * @param searchParameters Параметры поиска вакансий.
+     * @throws SearchException если поиск не работает
+     * @return список вакансий
      */
     public static VacancyList search(int vacancyLimit, ISearchParameter... searchParameters)
             throws SearchException {
@@ -34,7 +36,9 @@ public class HhApi {
      * Лимит вакансий по-умолчанию ({@value HhApi#DEFAULT_VACANCY_LIMIT}).
      *
      * @param searchParameters Параметры поиска вакансий.
-     * @see HhApi#DEFAULT_VACANCY_LIMIT
+     * @see HhApi#DEFAULT_VACANCY_LIMIT     *
+     * @throws SearchException если поиск не работает
+     * @return список вакансий
      */
     public static VacancyList search(ISearchParameter... searchParameters) throws SearchException {
         return search(DEFAULT_VACANCY_LIMIT, searchParameters);
@@ -46,6 +50,8 @@ public class HhApi {
      *
      * @param searchParameters Параметры поиска вакансий.
      * @see HhApi#DEFAULT_VACANCY_LIMIT
+     * @throws SearchException если поиск не работает
+     * @return список вакансий
      */
     public static VacancyList search(List<ISearchParameter> searchParameters) throws SearchException {
         ISearchParameter[] paramArray = (ISearchParameter[]) searchParameters.toArray();

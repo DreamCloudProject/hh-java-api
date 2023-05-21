@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.junit.Assert.*;
 
 public class MetroCityDictionaryTest {
-    public static final String CITY_NAME_MOSCOW = "ÃÓ—Í¬‡";
+    public static final String CITY_NAME_MOSCOW = "–ú–æ–°–∫–í–∞";
     public static final String CITY_ID_MOSCOW = "1";
     private MetroCityDictionary metroCityDictionary;
 
@@ -37,6 +37,6 @@ public class MetroCityDictionaryTest {
     @Test
     public void hasCityWithName() {
         assertTrue(metroCityDictionary.hasName(CITY_NAME_MOSCOW));
-        assertFalse(metroCityDictionary.hasName("”˛ÔËÌÒÍ"));
+        assertFalse(metroCityDictionary.hasName("–£—Ä—é–ø–∏–Ω—Å–∫"));
     }
 }

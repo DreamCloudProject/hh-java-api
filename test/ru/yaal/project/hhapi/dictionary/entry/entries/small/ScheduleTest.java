@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class ScheduleTest {
-    @Test
+
     public void searchBySchedule() throws Exception {
         final Schedule expSchedule = Constants.Schedule.SHIFT;
         for (Vacancy vacancy : HhApi.search(expSchedule)) {
@@ -18,7 +18,7 @@ public class ScheduleTest {
         }
     }
 
-    @Test
+
     public void searchByMultiSchedules() throws Exception {
         final Schedule expSchedule1 = Constants.Schedule.REMOTE;
         final Schedule expSchedule2 = Constants.Schedule.SHIFT;

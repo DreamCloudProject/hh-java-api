@@ -144,7 +144,7 @@ public final class SmallDictionariesInitializer {
             resumeAccessType = new Dictionary<>(smallDictionaries.getResumeAccessType(), ResumeAccessType.NULL_RESUME_ACCESS_TYPE);
             resumeContactsSiteType = new Dictionary<>(smallDictionaries.getResumeContactsSiteType(), ResumeContactsSiteType.NULL_RESUME_CONTACTS_SITE_TYPE);
             travelTime = new Dictionary<>(smallDictionaries.getTravelTime(), TravelTime.NULL_TRAVEL_TIME);
-            siteLang = new Dictionary<>(smallDictionaries.getSiteLang(), SiteLang.NULL_SITE_LANG);
+            //siteLang = new Dictionary<>(smallDictionaries.getSiteLang(), SiteLang.NULL_SITE_LANG);
             vacancyType = new Dictionary<>(smallDictionaries.getVacancyType(), VacancyType.NULL_VACANCY_TYPE);
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);

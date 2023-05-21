@@ -11,12 +11,12 @@ import static org.junit.Assert.assertEquals;
 public class AbstractDictionaryEntryTest {
     @Test
     public void testToString() throws Exception {
-        assertEquals("Мужской(male)", Constants.Gender.MALE.toString());
-        assertEquals("Полный день(fullDay)", Constants.Schedule.FULL_DAY.toString());
-        assertEquals("Санкт-Петербург(2)", Area.AREAS.getByName("Санкт-Петербург").toString());
-        assertEquals("Программирование, Разработка(1.221)",
+        assertEquals("РњСѓР¶СЃРєРѕР№(male)", Constants.Gender.MALE.toString());
+        assertEquals("РџРѕР»РЅС‹Р№ РґРµРЅСЊ(fullDay)", Constants.Schedule.FULL_DAY.toString());
+        assertEquals("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі(2)", Area.AREAS.getByName("РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі").toString());
+        assertEquals("РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ, Р Р°Р·СЂР°Р±РѕС‚РєР°(1.221)",
                 ProfField.PROF_FIELDS.getById("1.221").toString());
-        assertEquals("Кольцевая(5)", MetroLine.MOSCOW.getByName("Кольцевая").toString());
-        assertEquals("Чернышевская(14.198)", MetroLine.SAINT_PETERSBURG.getByName("Чернышевская").toString());
+        assertEquals("РљРѕР»СЊС†РµРІР°СЏ(5)", MetroLine.MOSCOW.getByName("РљРѕР»СЊС†РµРІР°СЏ").toString());
+        assertEquals("Р§РµСЂРЅС‹С€РµРІСЃРєР°СЏ(14.198)", MetroLine.SAINT_PETERSBURG.getByName("Р§РµСЂРЅС‹С€РµРІСЃРєР°СЏ").toString());
     }
 }

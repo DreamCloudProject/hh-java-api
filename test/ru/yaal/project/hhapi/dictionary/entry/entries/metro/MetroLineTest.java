@@ -13,15 +13,15 @@ import static org.junit.Assert.assertThat;
 public class MetroLineTest {
 
     /**
-     * todo Дублированный населенный пункт "Старые дороги(2329)".
+     * todo Р”СѓР±Р»РёСЂРѕРІР°РЅРЅС‹Р№ РЅР°СЃРµР»РµРЅРЅС‹Р№ РїСѓРЅРєС‚ "РЎС‚Р°СЂС‹Рµ РґРѕСЂРѕРіРё(2329)".
+     * @throws SearchException РµСЃР»Рё РїРѕРёСЃРє РЅРµ СЂР°Р±РѕС‚Р°РµС‚
      */
-    @Test
     public void searchByMetroLine() throws SearchException {
-        MetroStation expMetro = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Площадь Восстания");
-        MetroStation expMetro2 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Маяковская");
-        MetroStation expMetro3 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Чернышевская");
-        MetroStation expMetro4 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Купчино");
-        MetroStation expMetro5 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Обводный Канал");
+        MetroStation expMetro = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("РџР»РѕС‰Р°РґСЊ Р’РѕСЃСЃС‚Р°РЅРёСЏ");
+        MetroStation expMetro2 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("РњР°СЏРєРѕРІСЃРєР°СЏ");
+        MetroStation expMetro3 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("Р§РµСЂРЅС‹С€РµРІСЃРєР°СЏ");
+        MetroStation expMetro4 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("РљСѓРїС‡РёРЅРѕ");
+        MetroStation expMetro5 = (MetroStation) MetroLine.SAINT_PETERSBURG.getByName("РћР±РІРѕРґРЅС‹Р№ РљР°РЅР°Р»");
         for (Vacancy vacancy : HhApi.search(30, expMetro)) {
             Address address = vacancy.getAddress();
             if (!address.isNull()) {
@@ -35,8 +35,8 @@ public class MetroLineTest {
 
     @Test
     public void searchByMultiMetroLines() throws Exception {
-        MetroStation expMetro1 = (MetroStation) MetroLine.MOSCOW.getByName("Лубянка");
-        MetroStation expMetro2 = (MetroStation) MetroLine.KAZAN.getByName("Горки");
+        MetroStation expMetro1 = (MetroStation) MetroLine.MOSCOW.getByName("Р›СѓР±СЏРЅРєР°");
+        MetroStation expMetro2 = (MetroStation) MetroLine.KAZAN.getByName("Р“РѕСЂРєРё");
         HhApi.search(50, Constants.Label.WITH_ADDRESS, expMetro1, expMetro2);
     }
 }

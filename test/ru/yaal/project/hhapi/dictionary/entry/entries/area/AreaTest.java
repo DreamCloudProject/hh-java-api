@@ -11,9 +11,9 @@ import static org.junit.Assert.*;
 public class AreaTest {
     @Test
     public void testEquals() throws Exception {
-        Area vologda1 = Area.AREAS.getByName("¬ÓÎÓ„‰‡");
-        Area vologda2 = Area.AREAS.getByName("¬ÓÎÓ„‰‡");
-        Area kiev = Area.AREAS.getByName(" ËÂ‚");
+        Area vologda1 = Area.AREAS.getByName("–í–æ–ª–æ–≥–¥–∞");
+        Area vologda2 = Area.AREAS.getByName("–í–æ–ª–æ–≥–¥–∞");
+        Area kiev = Area.AREAS.getByName("–ö–∏–µ–≤");
         assertEquals(vologda1, vologda2);
         assertNotEquals(vologda1, kiev);
         assertFalse(vologda1.equals(null));
@@ -23,7 +23,7 @@ public class AreaTest {
 
     @Test
     public void searchArea() throws SearchException {
-        final Area expArea = Area.AREAS.getByName("—‡ÌÍÚ-œ≈“≈–¡”–√");
+        final Area expArea = Area.AREAS.getByName("–°–∞–Ω–∫—Ç-–ü–ï–¢–ï–†–ë–£–†–ì");
         for (Vacancy vacancy : HhApi.search(expArea)) {
             Area actArea = vacancy.getArea();
             assertEquals(expArea, actArea);
@@ -32,8 +32,8 @@ public class AreaTest {
 
     @Test
     public void searchMultiParams() throws SearchException {
-        Area expArea1 = Area.AREAS.getByName("—‡‡ÚÓ‚");
-        Area expArea2 = Area.AREAS.getByName("¬ÓÎÓ„‰‡");
+        Area expArea1 = Area.AREAS.getByName("–°–∞—Ä–∞—Ç–æ–≤");
+        Area expArea2 = Area.AREAS.getByName("–í–æ–ª–æ–≥–¥–∞");
         for (Vacancy vacancy : HhApi.search(expArea1, expArea2)) {
             Area actArea = vacancy.getArea();
             assertThat(actArea, isOneOf(expArea1, expArea2));

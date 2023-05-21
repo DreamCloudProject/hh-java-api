@@ -7,11 +7,11 @@ import static org.junit.Assert.*;
 
 public class AreaDictionaryTest {
     public static final String LEN_OBLAST_ID = "145";
-    public static final String LEN_OBLAST_NAME = "ÀÂÕËÕ„–‡ƒÒ ‡ﬂ Ó¡Î¿Ò“¸";
+    public static final String LEN_OBLAST_NAME = "–õ–µ–ù–∏–ù–≥–†–∞–î—Å–ö–∞–Ø –æ–ë–ª–ê—Å–¢—å";
     public static final String SPB_ID = "2";
-    public static final String SPB_NAME = "—‡ÕÍ“-œÂ“Â–·”√";
+    public static final String SPB_NAME = "–°–∞–ù–∫–¢-–ü–µ–¢–µ–†–±–£—Ä–ì";
     private static final String RUSSIA_ID = "113";
-    private static final String RUSSIA_NAME = "–Ó—Ò»ˇ";
+    private static final String RUSSIA_NAME = "–†–æ–°—Å–ò—è";
     private AreaDictionary areas;
 
     @Before
@@ -32,7 +32,7 @@ public class AreaDictionaryTest {
         assertTrue(areas.hasName(RUSSIA_NAME));
         assertTrue(areas.hasName(LEN_OBLAST_NAME));
         assertTrue(areas.hasName(SPB_NAME));
-        assertFalse(areas.hasName("ÃÓÂ ‰ÓÊ‰ÂÈ"));
+        assertFalse(areas.hasName("–ú–æ—Ä–µ –¥–æ–∂–¥–µ–π"));
     }
 
     @Test

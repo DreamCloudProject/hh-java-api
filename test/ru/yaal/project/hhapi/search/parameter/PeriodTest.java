@@ -24,6 +24,7 @@ public class PeriodTest {
     /**
      * Нельзя проверять правильность периода по дате создания вакансии, т.к.
      * вакансии возвращаются из кэша и их дата создания отличается от текущей.
+     * @throws SearchException исключение если поиск не работает
      */
     @Test
     public void testPeriod() throws SearchException {

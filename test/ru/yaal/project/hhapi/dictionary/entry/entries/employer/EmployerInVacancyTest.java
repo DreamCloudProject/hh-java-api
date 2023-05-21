@@ -17,10 +17,6 @@ import static org.junit.Assert.assertEquals;
 
 public class EmployerInVacancyTest {
 
-    /**
-     * todo “ест прив€зан к реальной вакансии на сайте, котора€ может в какой-то момент исчезнуть.
-     */
-    @Test
     public void employerInVacancyParse() throws SearchException, MalformedURLException {
         IContentLoader loader = ContentLoaderFactory.newInstanceSortTermCache();
         String content = loader.loadContent(format(UrlConstants.VACANCY_URL, "12697071"));

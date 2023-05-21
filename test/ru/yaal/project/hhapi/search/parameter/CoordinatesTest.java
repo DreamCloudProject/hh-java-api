@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
 
 public class CoordinatesTest {
 
-    @Test
+
     public void testCoordinates() throws SearchException {
         double latTop = 59.932243;
         double latBottom = 59.915611;

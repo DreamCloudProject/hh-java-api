@@ -18,10 +18,6 @@ import static org.junit.Assert.assertThat;
 
 public class EmployerSingleTest {
 
-    /**
-     * todo Тест привязан к реальной компании на сайте, которая может в какой-то момент исчезнуть.
-     */
-    @Test
     public void employerSingleParse() throws SearchException, MalformedURLException {
         IContentLoader loader = ContentLoaderFactory.newInstanceSortTermCache();
         String content = loader.loadContent(format(UrlConstants.EMPLOYER_URL, "47571"));

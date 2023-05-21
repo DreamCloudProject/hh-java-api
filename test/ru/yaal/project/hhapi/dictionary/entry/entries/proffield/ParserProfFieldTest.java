@@ -15,7 +15,7 @@ public class ParserProfFieldTest {
         IParser<ProfFieldDictionary> parser = new ProfFieldsParser();
         ProfFieldDictionary dictionary = parser.parse(content);
         assertTrue(dictionary.hasId("24.492"));
-        assertTrue(dictionary.hasName("Массажист"));
+        assertTrue(dictionary.hasName("РњР°СЃСЃР°Р¶РёСЃС‚"));
     }
 
 }

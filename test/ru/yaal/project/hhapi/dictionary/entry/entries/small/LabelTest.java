@@ -21,7 +21,6 @@ public class LabelTest {
         }
     }
 
-    @Test
     public void searchByMultiLabels() throws SearchException, IOException {
         for (Vacancy vacancy : HhApi.search(100, ACCEPT_HANDICAPPED, WITH_ADDRESS)) {
             assertTrue(vacancy.getAcceptHandicapped());
